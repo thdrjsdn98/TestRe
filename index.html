@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="robots" content="noindex, nofollow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>전기기사 - 회로이론 핵심 요약집</title>
+    <title>전기기사 - 회로이론 및 제어공학 핵심 요약집</title>
     <link rel="stylesheet" href="style.css">
     <meta name="theme-color" content="#2563eb">
     <meta name="mobile-web-app-capable" content="yes">
@@ -71,7 +71,7 @@
                 <div class="progress-box">
                     <div class="progress-header">
                         <span>📊 단원 학습 진도율</span>
-                        <span id="progress-text">0 / 12 (0%)</span>
+                        <span id="progress-text">0 / 22 (0%)</span>
                     </div>
                     <div class="progress-bar-track">
                         <div class="progress-bar-fill" id="progress-fill"></div>
@@ -107,7 +107,7 @@
                 </button>
                 <div class="tab-dropdown-list" id="tab-dropdown-list">
                     <button class="tab-btn active" onclick="openTab(event, 'tab-cover')">표지</button>
-                    <button class="tab-btn" onclick="openTab(event, 'tab-study')">📘 단원학습 (12단원)</button>
+                    <button class="tab-btn" onclick="openTab(event, 'tab-study')">📘 단원학습 (22단원)</button>
                     <button class="tab-btn" onclick="openTab(event, 'tab-exam')">🎲 랜덤 모의고사</button>
                     <button class="tab-btn" onclick="openTab(event, 'tab-wrong')">📕 오답노트</button>
                 </div>
@@ -118,11 +118,11 @@
         <div id="tab-cover" class="tab-content active">
             <div class="cover-page">
                 <div class="cover-title">전기기사 필기</div>
-                <div class="cover-subtitle">회로이론 - 핵심 요약집</div>
+                <div class="cover-subtitle">회로이론 및 제어공학 - 핵심 요약집</div>
                 <div class="cover-divider"></div>
                 <div class="cover-info">
-                    <p>범위: 12단원 (직류회로 ~ 라플라스 변환)</p>
-                    <p>확인문제: 단원별 5문제 · 총 60문제</p>
+                    <p>범위: 22단원 (직류회로 ~ 시퀀스제어)</p>
+                    <p>확인문제: 단원별 5문제 · 총 112문제</p>
                     <p>버전: V1.0</p>
                 </div>
             </div>
@@ -144,9 +144,9 @@
 
         <!-- 단원학습 탭 -->
         <div id="tab-study" class="tab-content">
-            <h1>전기기사 회로이론 - <br>📘 단원학습</h1>
+            <h1>전기기사 회로이론 및 제어공학 - <br>📘 단원학습</h1>
             <div style="text-align: right; font-size: 0.8em; color: var(--text-sub); margin-top: 4px; margin-bottom: 12px;">
-                <span>회로이론 12단원 · 확인문제 60문제</span>
+                <span>회로이론+제어공학 22단원 · 확인문제 112문제</span>
             </div>
 
             <div style="display: flex; justify-content: flex-end; margin-bottom: 10px;">
@@ -239,13 +239,83 @@
                                 <span id="card-star-12"></span>
                             </div>
                         </div>
+                        <div class="sub-nav-card" onclick="showSubPage(13)">
+                            <span>13. 제어계의 기초</span>
+                            <div class="card-status-box">
+                                <span class="card-done-badge" id="card-done-13" style="display:none;">✅ 완료</span>
+                                <span id="card-star-13"></span>
+                            </div>
+                        </div>
+                        <div class="sub-nav-card" onclick="showSubPage(14)">
+                            <span>14. 전달함수</span>
+                            <div class="card-status-box">
+                                <span class="card-done-badge" id="card-done-14" style="display:none;">✅ 완료</span>
+                                <span id="card-star-14"></span>
+                            </div>
+                        </div>
+                        <div class="sub-nav-card" onclick="showSubPage(15)">
+                            <span>15. 블록선도와 신호흐름선도</span>
+                            <div class="card-status-box">
+                                <span class="card-done-badge" id="card-done-15" style="display:none;">✅ 완료</span>
+                                <span id="card-star-15"></span>
+                            </div>
+                        </div>
+                        <div class="sub-nav-card" onclick="showSubPage(16)">
+                            <span>16. 과도응답</span>
+                            <div class="card-status-box">
+                                <span class="card-done-badge" id="card-done-16" style="display:none;">✅ 완료</span>
+                                <span id="card-star-16"></span>
+                            </div>
+                        </div>
+                        <div class="sub-nav-card" onclick="showSubPage(17)">
+                            <span>17. 정상상태 오차</span>
+                            <div class="card-status-box">
+                                <span class="card-done-badge" id="card-done-17" style="display:none;">✅ 완료</span>
+                                <span id="card-star-17"></span>
+                            </div>
+                        </div>
+                        <div class="sub-nav-card" onclick="showSubPage(18)">
+                            <span>18. 근궤적법</span>
+                            <div class="card-status-box">
+                                <span class="card-done-badge" id="card-done-18" style="display:none;">✅ 완료</span>
+                                <span id="card-star-18"></span>
+                            </div>
+                        </div>
+                        <div class="sub-nav-card" onclick="showSubPage(19)">
+                            <span>19. 주파수응답과 보드선도</span>
+                            <div class="card-status-box">
+                                <span class="card-done-badge" id="card-done-19" style="display:none;">✅ 완료</span>
+                                <span id="card-star-19"></span>
+                            </div>
+                        </div>
+                        <div class="sub-nav-card" onclick="showSubPage(20)">
+                            <span>20. 안정도 판별법</span>
+                            <div class="card-status-box">
+                                <span class="card-done-badge" id="card-done-20" style="display:none;">✅ 완료</span>
+                                <span id="card-star-20"></span>
+                            </div>
+                        </div>
+                        <div class="sub-nav-card" onclick="showSubPage(21)">
+                            <span>21. 상태공간법</span>
+                            <div class="card-status-box">
+                                <span class="card-done-badge" id="card-done-21" style="display:none;">✅ 완료</span>
+                                <span id="card-star-21"></span>
+                            </div>
+                        </div>
+                        <div class="sub-nav-card" onclick="showSubPage(22)">
+                            <span>22. 시퀀스제어와 논리회로</span>
+                            <div class="card-status-box">
+                                <span class="card-done-badge" id="card-done-22" style="display:none;">✅ 완료</span>
+                                <span id="card-star-22"></span>
+                            </div>
+                        </div>
                 </div>
             </div>
 
                 <div id="sub-page-1" class="sub-page" style="display:none;">
                     <div class="sub-page-header">
                         <div style="display:flex; align-items:center; gap:8px;">
-                            <div class="page-indicator">1 / 12 PAGE</div>
+                            <div class="page-indicator">1 / 22 PAGE</div>
                             <button class="font-btn" onclick="showSubMenu()" style="font-size:0.75em; padding:4px 8px;">📋 단원 목록</button>
                         </div>
                         <div style="display:flex; align-items:center; gap:10px;">
@@ -254,11 +324,6 @@
                         </div>
                     </div>
                     <h2>1. 직류회로의 기초</h2>
-
-                    <div class="page-memo-section">
-                        <p class="page-memo-title">📝 나만의 메모</p>
-                        <textarea id="memo-input-1" class="page-memo-textarea" placeholder="이 단원에서 헷갈리는 부분을 적어보세요." onblur="savePageMemo(1)"></textarea>
-                    </div>
 
                 <div class="highlight-box">
                     <p style="font-weight:700; margin:0 0 6px 0;">옴의 법칙</p>
@@ -284,11 +349,19 @@
                     <p style="font-weight:700; margin:0 0 6px 0;">전력</p>
                     <p style="margin:0;"><span class='orange'>P = VI = I²R = V²/R</span> [W]</p>
                 </div>
+                <div class="highlight-box">
+                    <p style="font-weight:700; margin:0 0 6px 0;">휘스톤 브리지</p>
+                    <p style="margin:0;">4개의 저항을 마름모 형태로 연결한 회로. <span class='red'>P/Q = R/X</span> (평형 조건)일 때 검류계에 전류가 흐르지 않는다 → 미지저항 <span class='red'>X = QR/P</span></p>
+                </div>
+                <div class="highlight-box">
+                    <p style="font-weight:700; margin:0 0 6px 0;">교류 브리지의 평형조건</p>
+                    <p style="margin:0;">직류 브리지(R₁R₃=R₂R₄)를 임피던스로 확장한 것. 마주보는 두 암의 임피던스의 곱이 같아야 평형: <span class='blue'>Z₁Z₃ = Z₂Z₄</span> (검류계/평형지시기에 전류 0)</p>
+                </div>
 
                     <div class="quiz-sec-header">
-                        <span class="quiz-sec-title">✏️ 단원 확인문제 (5문제)</span>
+                        <span class="quiz-sec-title">✏️ 단원 확인문제 (7문제)</span>
                     </div>
-                    <div class="score-board"><span id="score-unit-quiz-1">점수: 0 / 100점 (정답 0 / 5문제)</span></div>
+                    <div class="score-board"><span id="score-unit-quiz-1">점수: 0 / 100점 (정답 0 / 7문제)</span></div>
                     <div id="unit-quiz-1" data-scoreboard="true">
                 <div class="box quiz-box" id="box-u1-1" data-qid="u1-1">
                     <button class="font-btn" onclick="resetAnswer('u1-1')" style="float:right; font-size:0.75em; padding:4px 8px;">🔄 초기화</button>
@@ -346,17 +419,46 @@
                     <div id="q-result-u1-5" style="margin-top:10px; font-weight:bold; display:none;"></div>
                     <div id="q-expl-u1-5" class="note" style="display:none;">💡 해설: 직렬연결은 저항값을 단순히 더하므로 합성저항이 커집니다.</div>
                 </div>
+                <div class="box quiz-box" id="box-u1-6" data-qid="u1-6">
+                    <button class="font-btn" onclick="resetAnswer('u1-6')" style="float:right; font-size:0.75em; padding:4px 8px;">🔄 초기화</button>
+                    <p class="quiz-q-title" style="font-weight:bold; margin-top:0;">Q6. 휘스톤 브리지 회로가 평형 상태일 때 검류계(G)에 흐르는 전류는?</p>
+                    <div class="quiz-opt-grid" style="display:grid; grid-template-columns:1fr 1fr; gap:8px; margin:12px 0;">
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u1-6', this, '0이 된다')">최대가 된다</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u1-6', this, '0이 된다')">0이 된다</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u1-6', this, '0이 된다')">무한대가 된다</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u1-6', this, '0이 된다')">전원전류와 같다</button>
+                    </div>
+                    <div id="q-result-u1-6" style="margin-top:10px; font-weight:bold; display:none;"></div>
+                    <div id="q-expl-u1-6" class="note" style="display:none;">💡 해설: 휘스톤 브리지가 평형이면 두 접점의 전위가 같아져 검류계에는 전류가 흐르지 않습니다.</div>
+                </div>
+                <div class="box quiz-box" id="box-u1-7" data-qid="u1-7">
+                    <button class="font-btn" onclick="resetAnswer('u1-7')" style="float:right; font-size:0.75em; padding:4px 8px;">🔄 초기화</button>
+                    <p class="quiz-q-title" style="font-weight:bold; margin-top:0;">Q7. 교류 브리지 회로의 평형 조건으로 옳은 것은? (Z1~Z4는 브리지의 네 임피던스)</p>
+                    <div class="quiz-opt-grid" style="display:grid; grid-template-columns:1fr 1fr; gap:8px; margin:12px 0;">
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u1-7', this, 'Z1Z3 = Z2Z4')">Z1+Z3 = Z2+Z4</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u1-7', this, 'Z1Z3 = Z2Z4')">Z1Z3 = Z2Z4</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u1-7', this, 'Z1Z3 = Z2Z4')">Z1/Z3 = Z2Z4</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u1-7', this, 'Z1Z3 = Z2Z4')">Z1Z2 = Z3Z4</button>
+                    </div>
+                    <div id="q-result-u1-7" style="margin-top:10px; font-weight:bold; display:none;"></div>
+                    <div id="q-expl-u1-7" class="note" style="display:none;">💡 해설: 교류 브리지는 직류 휘스톤 브리지 조건(R1R3=R2R4)을 임피던스로 확장한 것으로, 마주보는 두 암의 임피던스 곱이 같을 때 평형(검류계 전류 0)이 됩니다.</div>
+                </div>
                     </div>
                     <div style="text-align:center; margin:10px 0 20px 0; display:flex; gap:6px; justify-content:center; flex-wrap:wrap;">
                         <button class="font-btn" onclick="shuffleSection('unit-quiz-1')" style="background-color:#8b5cf6; color:#fff;">🔀 순서 섞기</button>
                         <button class="font-btn" onclick="resetAllInContainer('unit-quiz-1')" style="background-color:#ef4444; color:#fff;">🔄 전체 초기화</button>
+                    </div>
+
+                    <div class="page-memo-section">
+                        <p class="page-memo-title">📝 나만의 메모</p>
+                        <textarea id="memo-input-1" class="page-memo-textarea" placeholder="이 단원에서 헷갈리는 부분을 적어보세요." onblur="savePageMemo(1)"></textarea>
                     </div>
                 </div>
 
                 <div id="sub-page-2" class="sub-page" style="display:none;">
                     <div class="sub-page-header">
                         <div style="display:flex; align-items:center; gap:8px;">
-                            <div class="page-indicator">2 / 12 PAGE</div>
+                            <div class="page-indicator">2 / 22 PAGE</div>
                             <button class="font-btn" onclick="showSubMenu()" style="font-size:0.75em; padding:4px 8px;">📋 단원 목록</button>
                         </div>
                         <div style="display:flex; align-items:center; gap:10px;">
@@ -365,11 +467,6 @@
                         </div>
                     </div>
                     <h2>2. 회로망 해석법</h2>
-
-                    <div class="page-memo-section">
-                        <p class="page-memo-title">📝 나만의 메모</p>
-                        <textarea id="memo-input-2" class="page-memo-textarea" placeholder="이 단원에서 헷갈리는 부분을 적어보세요." onblur="savePageMemo(2)"></textarea>
-                    </div>
 
                 <div class="highlight-box">
                     <p style="font-weight:700; margin:0 0 6px 0;">중첩의 정리</p>
@@ -458,12 +555,17 @@
                         <button class="font-btn" onclick="shuffleSection('unit-quiz-2')" style="background-color:#8b5cf6; color:#fff;">🔀 순서 섞기</button>
                         <button class="font-btn" onclick="resetAllInContainer('unit-quiz-2')" style="background-color:#ef4444; color:#fff;">🔄 전체 초기화</button>
                     </div>
+
+                    <div class="page-memo-section">
+                        <p class="page-memo-title">📝 나만의 메모</p>
+                        <textarea id="memo-input-2" class="page-memo-textarea" placeholder="이 단원에서 헷갈리는 부분을 적어보세요." onblur="savePageMemo(2)"></textarea>
+                    </div>
                 </div>
 
                 <div id="sub-page-3" class="sub-page" style="display:none;">
                     <div class="sub-page-header">
                         <div style="display:flex; align-items:center; gap:8px;">
-                            <div class="page-indicator">3 / 12 PAGE</div>
+                            <div class="page-indicator">3 / 22 PAGE</div>
                             <button class="font-btn" onclick="showSubMenu()" style="font-size:0.75em; padding:4px 8px;">📋 단원 목록</button>
                         </div>
                         <div style="display:flex; align-items:center; gap:10px;">
@@ -472,11 +574,6 @@
                         </div>
                     </div>
                     <h2>3. 정현파 교류의 기초</h2>
-
-                    <div class="page-memo-section">
-                        <p class="page-memo-title">📝 나만의 메모</p>
-                        <textarea id="memo-input-3" class="page-memo-textarea" placeholder="이 단원에서 헷갈리는 부분을 적어보세요." onblur="savePageMemo(3)"></textarea>
-                    </div>
 
                 <div class="highlight-box">
                     <p style="font-weight:700; margin:0 0 6px 0;">순시값</p>
@@ -569,12 +666,17 @@
                         <button class="font-btn" onclick="shuffleSection('unit-quiz-3')" style="background-color:#8b5cf6; color:#fff;">🔀 순서 섞기</button>
                         <button class="font-btn" onclick="resetAllInContainer('unit-quiz-3')" style="background-color:#ef4444; color:#fff;">🔄 전체 초기화</button>
                     </div>
+
+                    <div class="page-memo-section">
+                        <p class="page-memo-title">📝 나만의 메모</p>
+                        <textarea id="memo-input-3" class="page-memo-textarea" placeholder="이 단원에서 헷갈리는 부분을 적어보세요." onblur="savePageMemo(3)"></textarea>
+                    </div>
                 </div>
 
                 <div id="sub-page-4" class="sub-page" style="display:none;">
                     <div class="sub-page-header">
                         <div style="display:flex; align-items:center; gap:8px;">
-                            <div class="page-indicator">4 / 12 PAGE</div>
+                            <div class="page-indicator">4 / 22 PAGE</div>
                             <button class="font-btn" onclick="showSubMenu()" style="font-size:0.75em; padding:4px 8px;">📋 단원 목록</button>
                         </div>
                         <div style="display:flex; align-items:center; gap:10px;">
@@ -583,11 +685,6 @@
                         </div>
                     </div>
                     <h2>4. 페이저와 임피던스</h2>
-
-                    <div class="page-memo-section">
-                        <p class="page-memo-title">📝 나만의 메모</p>
-                        <textarea id="memo-input-4" class="page-memo-textarea" placeholder="이 단원에서 헷갈리는 부분을 적어보세요." onblur="savePageMemo(4)"></textarea>
-                    </div>
 
                 <div class="highlight-box">
                     <p style="font-weight:700; margin:0 0 6px 0;">저항 R</p>
@@ -672,12 +769,17 @@
                         <button class="font-btn" onclick="shuffleSection('unit-quiz-4')" style="background-color:#8b5cf6; color:#fff;">🔀 순서 섞기</button>
                         <button class="font-btn" onclick="resetAllInContainer('unit-quiz-4')" style="background-color:#ef4444; color:#fff;">🔄 전체 초기화</button>
                     </div>
+
+                    <div class="page-memo-section">
+                        <p class="page-memo-title">📝 나만의 메모</p>
+                        <textarea id="memo-input-4" class="page-memo-textarea" placeholder="이 단원에서 헷갈리는 부분을 적어보세요." onblur="savePageMemo(4)"></textarea>
+                    </div>
                 </div>
 
                 <div id="sub-page-5" class="sub-page" style="display:none;">
                     <div class="sub-page-header">
                         <div style="display:flex; align-items:center; gap:8px;">
-                            <div class="page-indicator">5 / 12 PAGE</div>
+                            <div class="page-indicator">5 / 22 PAGE</div>
                             <button class="font-btn" onclick="showSubMenu()" style="font-size:0.75em; padding:4px 8px;">📋 단원 목록</button>
                         </div>
                         <div style="display:flex; align-items:center; gap:10px;">
@@ -686,11 +788,6 @@
                         </div>
                     </div>
                     <h2>5. 교류전력</h2>
-
-                    <div class="page-memo-section">
-                        <p class="page-memo-title">📝 나만의 메모</p>
-                        <textarea id="memo-input-5" class="page-memo-textarea" placeholder="이 단원에서 헷갈리는 부분을 적어보세요." onblur="savePageMemo(5)"></textarea>
-                    </div>
 
                 <div class="highlight-box">
                     <p style="font-weight:700; margin:0 0 6px 0;">유효전력</p>
@@ -775,12 +872,17 @@
                         <button class="font-btn" onclick="shuffleSection('unit-quiz-5')" style="background-color:#8b5cf6; color:#fff;">🔀 순서 섞기</button>
                         <button class="font-btn" onclick="resetAllInContainer('unit-quiz-5')" style="background-color:#ef4444; color:#fff;">🔄 전체 초기화</button>
                     </div>
+
+                    <div class="page-memo-section">
+                        <p class="page-memo-title">📝 나만의 메모</p>
+                        <textarea id="memo-input-5" class="page-memo-textarea" placeholder="이 단원에서 헷갈리는 부분을 적어보세요." onblur="savePageMemo(5)"></textarea>
+                    </div>
                 </div>
 
                 <div id="sub-page-6" class="sub-page" style="display:none;">
                     <div class="sub-page-header">
                         <div style="display:flex; align-items:center; gap:8px;">
-                            <div class="page-indicator">6 / 12 PAGE</div>
+                            <div class="page-indicator">6 / 22 PAGE</div>
                             <button class="font-btn" onclick="showSubMenu()" style="font-size:0.75em; padding:4px 8px;">📋 단원 목록</button>
                         </div>
                         <div style="display:flex; align-items:center; gap:10px;">
@@ -789,11 +891,6 @@
                         </div>
                     </div>
                     <h2>6. 공진회로</h2>
-
-                    <div class="page-memo-section">
-                        <p class="page-memo-title">📝 나만의 메모</p>
-                        <textarea id="memo-input-6" class="page-memo-textarea" placeholder="이 단원에서 헷갈리는 부분을 적어보세요." onblur="savePageMemo(6)"></textarea>
-                    </div>
 
                 <div class="highlight-box">
                     <p style="font-weight:700; margin:0 0 6px 0;">직렬공진</p>
@@ -878,12 +975,17 @@
                         <button class="font-btn" onclick="shuffleSection('unit-quiz-6')" style="background-color:#8b5cf6; color:#fff;">🔀 순서 섞기</button>
                         <button class="font-btn" onclick="resetAllInContainer('unit-quiz-6')" style="background-color:#ef4444; color:#fff;">🔄 전체 초기화</button>
                     </div>
+
+                    <div class="page-memo-section">
+                        <p class="page-memo-title">📝 나만의 메모</p>
+                        <textarea id="memo-input-6" class="page-memo-textarea" placeholder="이 단원에서 헷갈리는 부분을 적어보세요." onblur="savePageMemo(6)"></textarea>
+                    </div>
                 </div>
 
                 <div id="sub-page-7" class="sub-page" style="display:none;">
                     <div class="sub-page-header">
                         <div style="display:flex; align-items:center; gap:8px;">
-                            <div class="page-indicator">7 / 12 PAGE</div>
+                            <div class="page-indicator">7 / 22 PAGE</div>
                             <button class="font-btn" onclick="showSubMenu()" style="font-size:0.75em; padding:4px 8px;">📋 단원 목록</button>
                         </div>
                         <div style="display:flex; align-items:center; gap:10px;">
@@ -892,11 +994,6 @@
                         </div>
                     </div>
                     <h2>7. 상호유도와 결합회로</h2>
-
-                    <div class="page-memo-section">
-                        <p class="page-memo-title">📝 나만의 메모</p>
-                        <textarea id="memo-input-7" class="page-memo-textarea" placeholder="이 단원에서 헷갈리는 부분을 적어보세요." onblur="savePageMemo(7)"></textarea>
-                    </div>
 
                 <div class="highlight-box">
                     <p style="font-weight:700; margin:0 0 6px 0;">결합계수</p>
@@ -985,12 +1082,17 @@
                         <button class="font-btn" onclick="shuffleSection('unit-quiz-7')" style="background-color:#8b5cf6; color:#fff;">🔀 순서 섞기</button>
                         <button class="font-btn" onclick="resetAllInContainer('unit-quiz-7')" style="background-color:#ef4444; color:#fff;">🔄 전체 초기화</button>
                     </div>
+
+                    <div class="page-memo-section">
+                        <p class="page-memo-title">📝 나만의 메모</p>
+                        <textarea id="memo-input-7" class="page-memo-textarea" placeholder="이 단원에서 헷갈리는 부분을 적어보세요." onblur="savePageMemo(7)"></textarea>
+                    </div>
                 </div>
 
                 <div id="sub-page-8" class="sub-page" style="display:none;">
                     <div class="sub-page-header">
                         <div style="display:flex; align-items:center; gap:8px;">
-                            <div class="page-indicator">8 / 12 PAGE</div>
+                            <div class="page-indicator">8 / 22 PAGE</div>
                             <button class="font-btn" onclick="showSubMenu()" style="font-size:0.75em; padding:4px 8px;">📋 단원 목록</button>
                         </div>
                         <div style="display:flex; align-items:center; gap:10px;">
@@ -999,11 +1101,6 @@
                         </div>
                     </div>
                     <h2>8. 대칭 3상 회로</h2>
-
-                    <div class="page-memo-section">
-                        <p class="page-memo-title">📝 나만의 메모</p>
-                        <textarea id="memo-input-8" class="page-memo-textarea" placeholder="이 단원에서 헷갈리는 부분을 적어보세요." onblur="savePageMemo(8)"></textarea>
-                    </div>
 
                 <div class="highlight-box">
                     <p style="font-weight:700; margin:0 0 6px 0;">Y결선</p>
@@ -1088,12 +1185,17 @@
                         <button class="font-btn" onclick="shuffleSection('unit-quiz-8')" style="background-color:#8b5cf6; color:#fff;">🔀 순서 섞기</button>
                         <button class="font-btn" onclick="resetAllInContainer('unit-quiz-8')" style="background-color:#ef4444; color:#fff;">🔄 전체 초기화</button>
                     </div>
+
+                    <div class="page-memo-section">
+                        <p class="page-memo-title">📝 나만의 메모</p>
+                        <textarea id="memo-input-8" class="page-memo-textarea" placeholder="이 단원에서 헷갈리는 부분을 적어보세요." onblur="savePageMemo(8)"></textarea>
+                    </div>
                 </div>
 
                 <div id="sub-page-9" class="sub-page" style="display:none;">
                     <div class="sub-page-header">
                         <div style="display:flex; align-items:center; gap:8px;">
-                            <div class="page-indicator">9 / 12 PAGE</div>
+                            <div class="page-indicator">9 / 22 PAGE</div>
                             <button class="font-btn" onclick="showSubMenu()" style="font-size:0.75em; padding:4px 8px;">📋 단원 목록</button>
                         </div>
                         <div style="display:flex; align-items:center; gap:10px;">
@@ -1102,11 +1204,6 @@
                         </div>
                     </div>
                     <h2>9. 비대칭 3상과 대칭좌표법</h2>
-
-                    <div class="page-memo-section">
-                        <p class="page-memo-title">📝 나만의 메모</p>
-                        <textarea id="memo-input-9" class="page-memo-textarea" placeholder="이 단원에서 헷갈리는 부분을 적어보세요." onblur="savePageMemo(9)"></textarea>
-                    </div>
 
                 <div class="highlight-box">
                     <p style="font-weight:700; margin:0 0 6px 0;">대칭좌표법</p>
@@ -1199,12 +1296,17 @@
                         <button class="font-btn" onclick="shuffleSection('unit-quiz-9')" style="background-color:#8b5cf6; color:#fff;">🔀 순서 섞기</button>
                         <button class="font-btn" onclick="resetAllInContainer('unit-quiz-9')" style="background-color:#ef4444; color:#fff;">🔄 전체 초기화</button>
                     </div>
+
+                    <div class="page-memo-section">
+                        <p class="page-memo-title">📝 나만의 메모</p>
+                        <textarea id="memo-input-9" class="page-memo-textarea" placeholder="이 단원에서 헷갈리는 부분을 적어보세요." onblur="savePageMemo(9)"></textarea>
+                    </div>
                 </div>
 
                 <div id="sub-page-10" class="sub-page" style="display:none;">
                     <div class="sub-page-header">
                         <div style="display:flex; align-items:center; gap:8px;">
-                            <div class="page-indicator">10 / 12 PAGE</div>
+                            <div class="page-indicator">10 / 22 PAGE</div>
                             <button class="font-btn" onclick="showSubMenu()" style="font-size:0.75em; padding:4px 8px;">📋 단원 목록</button>
                         </div>
                         <div style="display:flex; align-items:center; gap:10px;">
@@ -1213,11 +1315,6 @@
                         </div>
                     </div>
                     <h2>10. 비정현파 교류</h2>
-
-                    <div class="page-memo-section">
-                        <p class="page-memo-title">📝 나만의 메모</p>
-                        <textarea id="memo-input-10" class="page-memo-textarea" placeholder="이 단원에서 헷갈리는 부분을 적어보세요." onblur="savePageMemo(10)"></textarea>
-                    </div>
 
                 <div class="highlight-box">
                     <p style="font-weight:700; margin:0 0 6px 0;">푸리에 급수</p>
@@ -1302,12 +1399,17 @@
                         <button class="font-btn" onclick="shuffleSection('unit-quiz-10')" style="background-color:#8b5cf6; color:#fff;">🔀 순서 섞기</button>
                         <button class="font-btn" onclick="resetAllInContainer('unit-quiz-10')" style="background-color:#ef4444; color:#fff;">🔄 전체 초기화</button>
                     </div>
+
+                    <div class="page-memo-section">
+                        <p class="page-memo-title">📝 나만의 메모</p>
+                        <textarea id="memo-input-10" class="page-memo-textarea" placeholder="이 단원에서 헷갈리는 부분을 적어보세요." onblur="savePageMemo(10)"></textarea>
+                    </div>
                 </div>
 
                 <div id="sub-page-11" class="sub-page" style="display:none;">
                     <div class="sub-page-header">
                         <div style="display:flex; align-items:center; gap:8px;">
-                            <div class="page-indicator">11 / 12 PAGE</div>
+                            <div class="page-indicator">11 / 22 PAGE</div>
                             <button class="font-btn" onclick="showSubMenu()" style="font-size:0.75em; padding:4px 8px;">📋 단원 목록</button>
                         </div>
                         <div style="display:flex; align-items:center; gap:10px;">
@@ -1316,11 +1418,6 @@
                         </div>
                     </div>
                     <h2>11. 4단자망</h2>
-
-                    <div class="page-memo-section">
-                        <p class="page-memo-title">📝 나만의 메모</p>
-                        <textarea id="memo-input-11" class="page-memo-textarea" placeholder="이 단원에서 헷갈리는 부분을 적어보세요." onblur="savePageMemo(11)"></textarea>
-                    </div>
 
                 <div class="highlight-box">
                     <p style="font-weight:700; margin:0 0 6px 0;">Z파라미터</p>
@@ -1405,12 +1502,17 @@
                         <button class="font-btn" onclick="shuffleSection('unit-quiz-11')" style="background-color:#8b5cf6; color:#fff;">🔀 순서 섞기</button>
                         <button class="font-btn" onclick="resetAllInContainer('unit-quiz-11')" style="background-color:#ef4444; color:#fff;">🔄 전체 초기화</button>
                     </div>
+
+                    <div class="page-memo-section">
+                        <p class="page-memo-title">📝 나만의 메모</p>
+                        <textarea id="memo-input-11" class="page-memo-textarea" placeholder="이 단원에서 헷갈리는 부분을 적어보세요." onblur="savePageMemo(11)"></textarea>
+                    </div>
                 </div>
 
                 <div id="sub-page-12" class="sub-page" style="display:none;">
                     <div class="sub-page-header">
                         <div style="display:flex; align-items:center; gap:8px;">
-                            <div class="page-indicator">12 / 12 PAGE</div>
+                            <div class="page-indicator">12 / 22 PAGE</div>
                             <button class="font-btn" onclick="showSubMenu()" style="font-size:0.75em; padding:4px 8px;">📋 단원 목록</button>
                         </div>
                         <div style="display:flex; align-items:center; gap:10px;">
@@ -1419,11 +1521,6 @@
                         </div>
                     </div>
                     <h2>12. 라플라스 변환과 과도현상</h2>
-
-                    <div class="page-memo-section">
-                        <p class="page-memo-title">📝 나만의 메모</p>
-                        <textarea id="memo-input-12" class="page-memo-textarea" placeholder="이 단원에서 헷갈리는 부분을 적어보세요." onblur="savePageMemo(12)"></textarea>
-                    </div>
 
                 <div class="highlight-box">
                     <p style="font-weight:700; margin:0 0 6px 0;">라플라스 변환</p>
@@ -1510,6 +1607,1033 @@
                         <button class="font-btn" onclick="shuffleSection('unit-quiz-12')" style="background-color:#8b5cf6; color:#fff;">🔀 순서 섞기</button>
                         <button class="font-btn" onclick="resetAllInContainer('unit-quiz-12')" style="background-color:#ef4444; color:#fff;">🔄 전체 초기화</button>
                     </div>
+
+                    <div class="page-memo-section">
+                        <p class="page-memo-title">📝 나만의 메모</p>
+                        <textarea id="memo-input-12" class="page-memo-textarea" placeholder="이 단원에서 헷갈리는 부분을 적어보세요." onblur="savePageMemo(12)"></textarea>
+                    </div>
+                </div>
+
+                <div id="sub-page-13" class="sub-page" style="display:none;">
+                    <div class="sub-page-header">
+                        <div style="display:flex; align-items:center; gap:8px;">
+                            <div class="page-indicator">13 / 22 PAGE</div>
+                            <button class="font-btn" onclick="showSubMenu()" style="font-size:0.75em; padding:4px 8px;">📋 단원 목록</button>
+                        </div>
+                        <div style="display:flex; align-items:center; gap:10px;">
+                            <label class="complete-check-label"><input type="checkbox" id="check-page-13" onchange="toggleComplete(13)"> 학습 완료</label>
+                            <button class="bookmark-btn" id="star-btn-13" onclick="toggleBookmark(13)">☆</button>
+                        </div>
+                    </div>
+                    <h2>13. 제어계의 기초</h2>
+
+                <div class="highlight-box">
+                    <p style="font-weight:700; margin:0 0 6px 0;">개회로(개루프) 제어</p>
+                    <p style="margin:0;">출력을 입력측으로 되먹이지 <span class='red'>않는</span> 방식. 구조가 간단하지만 정밀도가 낮다.</p>
+                </div>
+                <div class="highlight-box">
+                    <p style="font-weight:700; margin:0 0 6px 0;">폐회로(피드백) 제어</p>
+                    <p style="margin:0;">출력을 입력측으로 <span class='red'>되먹여(feedback)</span> 오차를 수정. 외란에 강하고 정밀하지만 구조가 복잡하고 비용이 크다.</p>
+                </div>
+                <div class="highlight-box">
+                    <p style="font-weight:700; margin:0 0 6px 0;">피드백제어계 기본 요소</p>
+                    <p style="margin:0;">목표값 → 기준입력요소 → <span class='blue'>비교부</span>(동작신호 산출) → 제어요소 → 조작량 → 제어대상 → <span class='blue'>검출부</span> → (다시 비교부로)</p>
+                </div>
+                <div class="highlight-box">
+                    <p style="font-weight:700; margin:0 0 6px 0;">서보기구</p>
+                    <p style="margin:0;">위치·속도·자세 등 <span class='mint'>기계적 변위</span>를 제어량으로 하는 자동제어계</p>
+                </div>
+
+                    <div class="quiz-sec-header">
+                        <span class="quiz-sec-title">✏️ 단원 확인문제 (5문제)</span>
+                    </div>
+                    <div class="score-board"><span id="score-unit-quiz-13">점수: 0 / 100점 (정답 0 / 5문제)</span></div>
+                    <div id="unit-quiz-13" data-scoreboard="true">
+                <div class="box quiz-box" id="box-u13-1" data-qid="u13-1">
+                    <button class="font-btn" onclick="resetAnswer('u13-1')" style="float:right; font-size:0.75em; padding:4px 8px;">🔄 초기화</button>
+                    <p class="quiz-q-title" style="font-weight:bold; margin-top:0;">Q1. 출력을 입력측으로 되먹여 오차를 수정하는 제어 방식은?</p>
+                    <div class="quiz-opt-grid" style="display:grid; grid-template-columns:1fr 1fr; gap:8px; margin:12px 0;">
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u13-1', this, '폐회로(피드백) 제어')">개회로 제어</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u13-1', this, '폐회로(피드백) 제어')">폐회로(피드백) 제어</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u13-1', this, '폐회로(피드백) 제어')">수동 제어</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u13-1', this, '폐회로(피드백) 제어')">순차 제어</button>
+                    </div>
+                    <div id="q-result-u13-1" style="margin-top:10px; font-weight:bold; display:none;"></div>
+                    <div id="q-expl-u13-1" class="note" style="display:none;">💡 해설: 피드백 제어는 출력을 입력측으로 되먹여 오차를 자동으로 수정합니다.</div>
+                </div>
+                <div class="box quiz-box" id="box-u13-2" data-qid="u13-2">
+                    <button class="font-btn" onclick="resetAnswer('u13-2')" style="float:right; font-size:0.75em; padding:4px 8px;">🔄 초기화</button>
+                    <p class="quiz-q-title" style="font-weight:bold; margin-top:0;">Q2. 개회로(개루프) 제어계의 특징으로 옳은 것은?</p>
+                    <div class="quiz-opt-grid" style="display:grid; grid-template-columns:1fr 1fr; gap:8px; margin:12px 0;">
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u13-2', this, '구조가 간단하지만 정밀도가 낮다')">구조가 간단하지만 정밀도가 낮다</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u13-2', this, '구조가 간단하지만 정밀도가 낮다')">구조가 복잡하지만 정밀도가 낮다</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u13-2', this, '구조가 간단하지만 정밀도가 낮다')">외란에 매우 강하다</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u13-2', this, '구조가 간단하지만 정밀도가 낮다')">반드시 비교부가 필요하다</button>
+                    </div>
+                    <div id="q-result-u13-2" style="margin-top:10px; font-weight:bold; display:none;"></div>
+                    <div id="q-expl-u13-2" class="note" style="display:none;">💡 해설: 개회로 제어는 되먹임이 없어 구조는 간단하지만 오차 보정이 안 되어 정밀도가 낮습니다.</div>
+                </div>
+                <div class="box quiz-box" id="box-u13-3" data-qid="u13-3">
+                    <button class="font-btn" onclick="resetAnswer('u13-3')" style="float:right; font-size:0.75em; padding:4px 8px;">🔄 초기화</button>
+                    <p class="quiz-q-title" style="font-weight:bold; margin-top:0;">Q3. 피드백제어계에서 목표값과 검출값을 비교해 동작신호를 만드는 부분을 무엇이라 하는가? <span class="blue_nb" style="font-size:0.8em;">(단답형)</span></p>
+                    <div style="display:flex; gap:6px; margin:12px 0;">
+                        <input type="text" id="input-u13-3" class="mini-text-input" placeholder="정답 입력" style="max-width:180px;">
+                        <button class="font-btn" onclick="checkAnswerByInput('u13-3', document.getElementById('input-u13-3'), ['비교부'])">확인</button>
+                    </div>
+                    <div id="q-result-u13-3" style="margin-top:10px; font-weight:bold; display:none;"></div>
+                    <div id="q-expl-u13-3" class="note" style="display:none;">💡 해설: 비교부는 목표값과 검출부의 출력을 비교하여 동작신호를 만듭니다.</div>
+                </div>
+                <div class="box quiz-box" id="box-u13-4" data-qid="u13-4">
+                    <button class="font-btn" onclick="resetAnswer('u13-4')" style="float:right; font-size:0.75em; padding:4px 8px;">🔄 초기화</button>
+                    <p class="quiz-q-title" style="font-weight:bold; margin-top:0;">Q4. 서보기구는 주로 무엇을 제어량으로 하는가?</p>
+                    <div class="quiz-opt-grid" style="display:grid; grid-template-columns:1fr 1fr; gap:8px; margin:12px 0;">
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u13-4', this, '위치·속도·자세 등 기계적 변위')">온도</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u13-4', this, '위치·속도·자세 등 기계적 변위')">압력</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u13-4', this, '위치·속도·자세 등 기계적 변위')">위치·속도·자세 등 기계적 변위</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u13-4', this, '위치·속도·자세 등 기계적 변위')">유량</button>
+                    </div>
+                    <div id="q-result-u13-4" style="margin-top:10px; font-weight:bold; display:none;"></div>
+                    <div id="q-expl-u13-4" class="note" style="display:none;">💡 해설: 서보기구는 위치, 속도, 자세와 같은 기계적 변위를 제어량으로 합니다.</div>
+                </div>
+                <div class="box quiz-box" id="box-u13-5" data-qid="u13-5">
+                    <button class="font-btn" onclick="resetAnswer('u13-5')" style="float:right; font-size:0.75em; padding:4px 8px;">🔄 초기화</button>
+                    <p class="quiz-q-title" style="font-weight:bold; margin-top:0;">Q5. 되먹임(피드백)이 없는 제어 방식을 무엇이라 하는가? <span class="blue_nb" style="font-size:0.8em;">(단답형)</span></p>
+                    <div style="display:flex; gap:6px; margin:12px 0;">
+                        <input type="text" id="input-u13-5" class="mini-text-input" placeholder="정답 입력" style="max-width:180px;">
+                        <button class="font-btn" onclick="checkAnswerByInput('u13-5', document.getElementById('input-u13-5'), ['개회로 제어', '개루프 제어', '개회로제어'])">확인</button>
+                    </div>
+                    <div id="q-result-u13-5" style="margin-top:10px; font-weight:bold; display:none;"></div>
+                    <div id="q-expl-u13-5" class="note" style="display:none;">💡 해설: 되먹임이 없는 방식은 개회로(개루프) 제어라고 합니다.</div>
+                </div>
+                    </div>
+                    <div style="text-align:center; margin:10px 0 20px 0; display:flex; gap:6px; justify-content:center; flex-wrap:wrap;">
+                        <button class="font-btn" onclick="shuffleSection('unit-quiz-13')" style="background-color:#8b5cf6; color:#fff;">🔀 순서 섞기</button>
+                        <button class="font-btn" onclick="resetAllInContainer('unit-quiz-13')" style="background-color:#ef4444; color:#fff;">🔄 전체 초기화</button>
+                    </div>
+
+                    <div class="page-memo-section">
+                        <p class="page-memo-title">📝 나만의 메모</p>
+                        <textarea id="memo-input-13" class="page-memo-textarea" placeholder="이 단원에서 헷갈리는 부분을 적어보세요." onblur="savePageMemo(13)"></textarea>
+                    </div>
+                </div>
+
+                <div id="sub-page-14" class="sub-page" style="display:none;">
+                    <div class="sub-page-header">
+                        <div style="display:flex; align-items:center; gap:8px;">
+                            <div class="page-indicator">14 / 22 PAGE</div>
+                            <button class="font-btn" onclick="showSubMenu()" style="font-size:0.75em; padding:4px 8px;">📋 단원 목록</button>
+                        </div>
+                        <div style="display:flex; align-items:center; gap:10px;">
+                            <label class="complete-check-label"><input type="checkbox" id="check-page-14" onchange="toggleComplete(14)"> 학습 완료</label>
+                            <button class="bookmark-btn" id="star-btn-14" onclick="toggleBookmark(14)">☆</button>
+                        </div>
+                    </div>
+                    <h2>14. 전달함수</h2>
+
+                <div class="highlight-box">
+                    <p style="font-weight:700; margin:0 0 6px 0;">전달함수의 정의</p>
+                    <p style="margin:0;">모든 <span class='red'>초기값을 0</span>으로 했을 때, 출력의 라플라스변환 / 입력의 라플라스변환 → <span class='red'>G(s) = C(s)/R(s)</span></p>
+                </div>
+                <div class="highlight-box">
+                    <p style="font-weight:700; margin:0 0 6px 0;">적용 조건</p>
+                    <p style="margin:0;"><span class='blue'>선형 시불변계(LTI)</span>에서만 정의된다.</p>
+                </div>
+                <div class="highlight-box">
+                    <p style="font-weight:700; margin:0 0 6px 0;">RC 저역통과회로 예</p>
+                    <p style="margin:0;"><span class='mint'>G(s) = 1/(1+RCs)</span> (τ=RC)</p>
+                </div>
+
+                    <div class="quiz-sec-header">
+                        <span class="quiz-sec-title">✏️ 단원 확인문제 (5문제)</span>
+                    </div>
+                    <div class="score-board"><span id="score-unit-quiz-14">점수: 0 / 100점 (정답 0 / 5문제)</span></div>
+                    <div id="unit-quiz-14" data-scoreboard="true">
+                <div class="box quiz-box" id="box-u14-1" data-qid="u14-1">
+                    <button class="font-btn" onclick="resetAnswer('u14-1')" style="float:right; font-size:0.75em; padding:4px 8px;">🔄 초기화</button>
+                    <p class="quiz-q-title" style="font-weight:bold; margin-top:0;">Q1. 전달함수의 정의로 옳은 것은?</p>
+                    <div class="quiz-opt-grid" style="display:grid; grid-template-columns:1fr 1fr; gap:8px; margin:12px 0;">
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u14-1', this, '모든 초기조건을 0으로 했을 때 출력 라플라스변환/입력 라플라스변환')">모든 초기조건을 0으로 했을 때 출력 라플라스변환/입력 라플라스변환</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u14-1', this, '모든 초기조건을 0으로 했을 때 출력 라플라스변환/입력 라플라스변환')">입력과 출력의 곱</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u14-1', this, '모든 초기조건을 0으로 했을 때 출력 라플라스변환/입력 라플라스변환')">입력에서 출력을 뺀 값</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u14-1', this, '모든 초기조건을 0으로 했을 때 출력 라플라스변환/입력 라플라스변환')">최대 출력값</button>
+                    </div>
+                    <div id="q-result-u14-1" style="margin-top:10px; font-weight:bold; display:none;"></div>
+                    <div id="q-expl-u14-1" class="note" style="display:none;">💡 해설: 전달함수는 초기값을 0으로 한 상태에서 출력의 라플라스변환을 입력의 라플라스변환으로 나눈 것입니다.</div>
+                </div>
+                <div class="box quiz-box" id="box-u14-2" data-qid="u14-2">
+                    <button class="font-btn" onclick="resetAnswer('u14-2')" style="float:right; font-size:0.75em; padding:4px 8px;">🔄 초기화</button>
+                    <p class="quiz-q-title" style="font-weight:bold; margin-top:0;">Q2. 전달함수 기호 G(s) = C(s)/____ 에서 빈칸에 들어갈 것은? <span class="blue_nb" style="font-size:0.8em;">(단답형)</span></p>
+                    <div style="display:flex; gap:6px; margin:12px 0;">
+                        <input type="text" id="input-u14-2" class="mini-text-input" placeholder="정답 입력" style="max-width:180px;">
+                        <button class="font-btn" onclick="checkAnswerByInput('u14-2', document.getElementById('input-u14-2'), ['R(s)'])">확인</button>
+                    </div>
+                    <div id="q-result-u14-2" style="margin-top:10px; font-weight:bold; display:none;"></div>
+                    <div id="q-expl-u14-2" class="note" style="display:none;">💡 해설: 전달함수는 G(s) = C(s)/R(s) 로 표기합니다(C: 출력, R: 입력).</div>
+                </div>
+                <div class="box quiz-box" id="box-u14-3" data-qid="u14-3">
+                    <button class="font-btn" onclick="resetAnswer('u14-3')" style="float:right; font-size:0.75em; padding:4px 8px;">🔄 초기화</button>
+                    <p class="quiz-q-title" style="font-weight:bold; margin-top:0;">Q3. 전달함수는 어떤 시스템에서 정의되는가?</p>
+                    <div class="quiz-opt-grid" style="display:grid; grid-template-columns:1fr 1fr; gap:8px; margin:12px 0;">
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u14-3', this, '선형 시불변계')">비선형 시변계</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u14-3', this, '선형 시불변계')">선형 시불변계</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u14-3', this, '선형 시불변계')">임의의 모든 시스템</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u14-3', this, '선형 시불변계')">디지털 시스템만</button>
+                    </div>
+                    <div id="q-result-u14-3" style="margin-top:10px; font-weight:bold; display:none;"></div>
+                    <div id="q-expl-u14-3" class="note" style="display:none;">💡 해설: 전달함수는 선형 시불변(LTI) 시스템에서만 정의됩니다.</div>
+                </div>
+                <div class="box quiz-box" id="box-u14-4" data-qid="u14-4">
+                    <button class="font-btn" onclick="resetAnswer('u14-4')" style="float:right; font-size:0.75em; padding:4px 8px;">🔄 초기화</button>
+                    <p class="quiz-q-title" style="font-weight:bold; margin-top:0;">Q4. RC 저역통과회로의 전달함수 G(s) = 1/(1+___)에서 시정수를 RC로 둘 때 빈칸은? <span class="blue_nb" style="font-size:0.8em;">(단답형)</span></p>
+                    <div style="display:flex; gap:6px; margin:12px 0;">
+                        <input type="text" id="input-u14-4" class="mini-text-input" placeholder="정답 입력" style="max-width:180px;">
+                        <button class="font-btn" onclick="checkAnswerByInput('u14-4', document.getElementById('input-u14-4'), ['RCs'])">확인</button>
+                    </div>
+                    <div id="q-result-u14-4" style="margin-top:10px; font-weight:bold; display:none;"></div>
+                    <div id="q-expl-u14-4" class="note" style="display:none;">💡 해설: RC 저역통과회로의 전달함수는 G(s) = 1/(1+RCs) 입니다.</div>
+                </div>
+                <div class="box quiz-box" id="box-u14-5" data-qid="u14-5">
+                    <button class="font-btn" onclick="resetAnswer('u14-5')" style="float:right; font-size:0.75em; padding:4px 8px;">🔄 초기화</button>
+                    <p class="quiz-q-title" style="font-weight:bold; margin-top:0;">Q5. 전달함수를 구할 때 시스템의 모든 초기값은 어떻게 두는가?</p>
+                    <div class="quiz-opt-grid" style="display:grid; grid-template-columns:1fr 1fr; gap:8px; margin:12px 0;">
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u14-5', this, '0으로 둔다')">0으로 둔다</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u14-5', this, '0으로 둔다')">최댓값으로 둔다</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u14-5', this, '0으로 둔다')">무시하지 않고 그대로 둔다</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u14-5', this, '0으로 둔다')">1로 둔다</button>
+                    </div>
+                    <div id="q-result-u14-5" style="margin-top:10px; font-weight:bold; display:none;"></div>
+                    <div id="q-expl-u14-5" class="note" style="display:none;">💡 해설: 전달함수는 모든 초기조건을 0으로 가정하고 구합니다.</div>
+                </div>
+                    </div>
+                    <div style="text-align:center; margin:10px 0 20px 0; display:flex; gap:6px; justify-content:center; flex-wrap:wrap;">
+                        <button class="font-btn" onclick="shuffleSection('unit-quiz-14')" style="background-color:#8b5cf6; color:#fff;">🔀 순서 섞기</button>
+                        <button class="font-btn" onclick="resetAllInContainer('unit-quiz-14')" style="background-color:#ef4444; color:#fff;">🔄 전체 초기화</button>
+                    </div>
+
+                    <div class="page-memo-section">
+                        <p class="page-memo-title">📝 나만의 메모</p>
+                        <textarea id="memo-input-14" class="page-memo-textarea" placeholder="이 단원에서 헷갈리는 부분을 적어보세요." onblur="savePageMemo(14)"></textarea>
+                    </div>
+                </div>
+
+                <div id="sub-page-15" class="sub-page" style="display:none;">
+                    <div class="sub-page-header">
+                        <div style="display:flex; align-items:center; gap:8px;">
+                            <div class="page-indicator">15 / 22 PAGE</div>
+                            <button class="font-btn" onclick="showSubMenu()" style="font-size:0.75em; padding:4px 8px;">📋 단원 목록</button>
+                        </div>
+                        <div style="display:flex; align-items:center; gap:10px;">
+                            <label class="complete-check-label"><input type="checkbox" id="check-page-15" onchange="toggleComplete(15)"> 학습 완료</label>
+                            <button class="bookmark-btn" id="star-btn-15" onclick="toggleBookmark(15)">☆</button>
+                        </div>
+                    </div>
+                    <h2>15. 블록선도와 신호흐름선도</h2>
+
+                <div class="highlight-box">
+                    <p style="font-weight:700; margin:0 0 6px 0;">직렬 결합</p>
+                    <p style="margin:0;"><span class='red'>G1(s) × G2(s)</span></p>
+                </div>
+                <div class="highlight-box">
+                    <p style="font-weight:700; margin:0 0 6px 0;">병렬 결합</p>
+                    <p style="margin:0;"><span class='blue'>G1(s) + G2(s)</span></p>
+                </div>
+                <div class="highlight-box">
+                    <p style="font-weight:700; margin:0 0 6px 0;">피드백(궤환) 결합</p>
+                    <p style="margin:0;"><span class='mint'>C/R = G / (1 ± GH)</span> — 부궤환(음성 피드백)이면 분모는 <span class='mint'>1 + GH</span></p>
+                </div>
+                <div class="highlight-box">
+                    <p style="font-weight:700; margin:0 0 6px 0;">메이슨의 이득공식</p>
+                    <p style="margin:0;">신호흐름선도에서 <span class='orange'>경로이득과 루프이득</span>을 이용해 전체 전달함수를 구하는 공식</p>
+                </div>
+
+                    <div class="quiz-sec-header">
+                        <span class="quiz-sec-title">✏️ 단원 확인문제 (5문제)</span>
+                    </div>
+                    <div class="score-board"><span id="score-unit-quiz-15">점수: 0 / 100점 (정답 0 / 5문제)</span></div>
+                    <div id="unit-quiz-15" data-scoreboard="true">
+                <div class="box quiz-box" id="box-u15-1" data-qid="u15-1">
+                    <button class="font-btn" onclick="resetAnswer('u15-1')" style="float:right; font-size:0.75em; padding:4px 8px;">🔄 초기화</button>
+                    <p class="quiz-q-title" style="font-weight:bold; margin-top:0;">Q1. 두 블록이 직렬로 연결되어 있을 때 합성 전달함수는?</p>
+                    <div class="quiz-opt-grid" style="display:grid; grid-template-columns:1fr 1fr; gap:8px; margin:12px 0;">
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u15-1', this, 'G1 × G2')">G1 + G2</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u15-1', this, 'G1 × G2')">G1 × G2</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u15-1', this, 'G1 × G2')">G1 / G2</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u15-1', this, 'G1 × G2')">G1 - G2</button>
+                    </div>
+                    <div id="q-result-u15-1" style="margin-top:10px; font-weight:bold; display:none;"></div>
+                    <div id="q-expl-u15-1" class="note" style="display:none;">💡 해설: 직렬 결합의 합성 전달함수는 두 전달함수의 곱입니다.</div>
+                </div>
+                <div class="box quiz-box" id="box-u15-2" data-qid="u15-2">
+                    <button class="font-btn" onclick="resetAnswer('u15-2')" style="float:right; font-size:0.75em; padding:4px 8px;">🔄 초기화</button>
+                    <p class="quiz-q-title" style="font-weight:bold; margin-top:0;">Q2. 피드백 제어계의 종합 전달함수 C/R = G/(1±___)에서 빈칸은? <span class="blue_nb" style="font-size:0.8em;">(단답형)</span></p>
+                    <div style="display:flex; gap:6px; margin:12px 0;">
+                        <input type="text" id="input-u15-2" class="mini-text-input" placeholder="정답 입력" style="max-width:180px;">
+                        <button class="font-btn" onclick="checkAnswerByInput('u15-2', document.getElementById('input-u15-2'), ['GH'])">확인</button>
+                    </div>
+                    <div id="q-result-u15-2" style="margin-top:10px; font-weight:bold; display:none;"></div>
+                    <div id="q-expl-u15-2" class="note" style="display:none;">💡 해설: 피드백계의 종합 전달함수는 C/R = G/(1±GH) 입니다.</div>
+                </div>
+                <div class="box quiz-box" id="box-u15-3" data-qid="u15-3">
+                    <button class="font-btn" onclick="resetAnswer('u15-3')" style="float:right; font-size:0.75em; padding:4px 8px;">🔄 초기화</button>
+                    <p class="quiz-q-title" style="font-weight:bold; margin-top:0;">Q3. 부궤환(음성 피드백) 결합일 때 종합 전달함수의 분모는?</p>
+                    <div class="quiz-opt-grid" style="display:grid; grid-template-columns:1fr 1fr; gap:8px; margin:12px 0;">
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u15-3', this, '1 + GH')">1 - GH</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u15-3', this, '1 + GH')">1 + GH</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u15-3', this, '1 + GH')">GH</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u15-3', this, '1 + GH')">1/GH</button>
+                    </div>
+                    <div id="q-result-u15-3" style="margin-top:10px; font-weight:bold; display:none;"></div>
+                    <div id="q-expl-u15-3" class="note" style="display:none;">💡 해설: 부궤환(negative feedback)의 종합 전달함수 분모는 1+GH 입니다.</div>
+                </div>
+                <div class="box quiz-box" id="box-u15-4" data-qid="u15-4">
+                    <button class="font-btn" onclick="resetAnswer('u15-4')" style="float:right; font-size:0.75em; padding:4px 8px;">🔄 초기화</button>
+                    <p class="quiz-q-title" style="font-weight:bold; margin-top:0;">Q4. 신호흐름선도에서 경로이득과 루프이득을 이용해 전체 이득을 구하는 공식은?</p>
+                    <div class="quiz-opt-grid" style="display:grid; grid-template-columns:1fr 1fr; gap:8px; margin:12px 0;">
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u15-4', this, '메이슨의 이득공식')">라플라스 공식</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u15-4', this, '메이슨의 이득공식')">메이슨의 이득공식</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u15-4', this, '메이슨의 이득공식')">오일러 공식</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u15-4', this, '메이슨의 이득공식')">테일러 공식</button>
+                    </div>
+                    <div id="q-result-u15-4" style="margin-top:10px; font-weight:bold; display:none;"></div>
+                    <div id="q-expl-u15-4" class="note" style="display:none;">💡 해설: 메이슨의 이득공식은 신호흐름선도의 전체 전달함수를 구하는 공식입니다.</div>
+                </div>
+                <div class="box quiz-box" id="box-u15-5" data-qid="u15-5">
+                    <button class="font-btn" onclick="resetAnswer('u15-5')" style="float:right; font-size:0.75em; padding:4px 8px;">🔄 초기화</button>
+                    <p class="quiz-q-title" style="font-weight:bold; margin-top:0;">Q5. 두 블록이 병렬로 연결되어(신호가 합쳐져) 있을 때 합성 전달함수는 G1과 G2의 어떤 연산인가? <span class="blue_nb" style="font-size:0.8em;">(단답형)</span></p>
+                    <div style="display:flex; gap:6px; margin:12px 0;">
+                        <input type="text" id="input-u15-5" class="mini-text-input" placeholder="정답 입력" style="max-width:180px;">
+                        <button class="font-btn" onclick="checkAnswerByInput('u15-5', document.getElementById('input-u15-5'), ['합', '덧셈', '더한값'])">확인</button>
+                    </div>
+                    <div id="q-result-u15-5" style="margin-top:10px; font-weight:bold; display:none;"></div>
+                    <div id="q-expl-u15-5" class="note" style="display:none;">💡 해설: 병렬 결합의 합성 전달함수는 두 전달함수의 합(G1+G2)입니다.</div>
+                </div>
+                    </div>
+                    <div style="text-align:center; margin:10px 0 20px 0; display:flex; gap:6px; justify-content:center; flex-wrap:wrap;">
+                        <button class="font-btn" onclick="shuffleSection('unit-quiz-15')" style="background-color:#8b5cf6; color:#fff;">🔀 순서 섞기</button>
+                        <button class="font-btn" onclick="resetAllInContainer('unit-quiz-15')" style="background-color:#ef4444; color:#fff;">🔄 전체 초기화</button>
+                    </div>
+
+                    <div class="page-memo-section">
+                        <p class="page-memo-title">📝 나만의 메모</p>
+                        <textarea id="memo-input-15" class="page-memo-textarea" placeholder="이 단원에서 헷갈리는 부분을 적어보세요." onblur="savePageMemo(15)"></textarea>
+                    </div>
+                </div>
+
+                <div id="sub-page-16" class="sub-page" style="display:none;">
+                    <div class="sub-page-header">
+                        <div style="display:flex; align-items:center; gap:8px;">
+                            <div class="page-indicator">16 / 22 PAGE</div>
+                            <button class="font-btn" onclick="showSubMenu()" style="font-size:0.75em; padding:4px 8px;">📋 단원 목록</button>
+                        </div>
+                        <div style="display:flex; align-items:center; gap:10px;">
+                            <label class="complete-check-label"><input type="checkbox" id="check-page-16" onchange="toggleComplete(16)"> 학습 완료</label>
+                            <button class="bookmark-btn" id="star-btn-16" onclick="toggleBookmark(16)">☆</button>
+                        </div>
+                    </div>
+                    <h2>16. 과도응답</h2>
+
+                <div class="highlight-box">
+                    <p style="font-weight:700; margin:0 0 6px 0;">1차계 응답</p>
+                    <p style="margin:0;">시정수 τ, 계단응답 <span class='red'>c(t) = 1 - e^(-t/τ)</span> — t=τ일 때 최종값의 약 <span class='red'>63%</span>에 도달</p>
+                </div>
+                <div class="highlight-box">
+                    <p style="font-weight:700; margin:0 0 6px 0;">2차계 감쇠비 ζ</p>
+                    <p style="margin:0;"><span class='blue'>ζ &lt; 1</span>: 부족제동(진동) / <span class='blue'>ζ = 1</span>: 임계제동 / <span class='blue'>ζ &gt; 1</span>: 과제동</p>
+                </div>
+                <div class="highlight-box">
+                    <p style="font-weight:700; margin:0 0 6px 0;">오버슈트</p>
+                    <p style="margin:0;">감쇠비 ζ가 <span class='mint'>작을수록</span> 오버슈트는 커진다</p>
+                </div>
+
+                    <div class="quiz-sec-header">
+                        <span class="quiz-sec-title">✏️ 단원 확인문제 (5문제)</span>
+                    </div>
+                    <div class="score-board"><span id="score-unit-quiz-16">점수: 0 / 100점 (정답 0 / 5문제)</span></div>
+                    <div id="unit-quiz-16" data-scoreboard="true">
+                <div class="box quiz-box" id="box-u16-1" data-qid="u16-1">
+                    <button class="font-btn" onclick="resetAnswer('u16-1')" style="float:right; font-size:0.75em; padding:4px 8px;">🔄 초기화</button>
+                    <p class="quiz-q-title" style="font-weight:bold; margin-top:0;">Q1. 2차계에서 감쇠비 ζ &lt; 1일 때의 응답 형태는?</p>
+                    <div class="quiz-opt-grid" style="display:grid; grid-template-columns:1fr 1fr; gap:8px; margin:12px 0;">
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u16-1', this, '부족제동(진동)')">부족제동(진동)</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u16-1', this, '부족제동(진동)')">임계제동</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u16-1', this, '부족제동(진동)')">과제동</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u16-1', this, '부족제동(진동)')">무응답</button>
+                    </div>
+                    <div id="q-result-u16-1" style="margin-top:10px; font-weight:bold; display:none;"></div>
+                    <div id="q-expl-u16-1" class="note" style="display:none;">💡 해설: ζ&lt;1이면 진동하며 감쇠하는 부족제동 응답을 보입니다.</div>
+                </div>
+                <div class="box quiz-box" id="box-u16-2" data-qid="u16-2">
+                    <button class="font-btn" onclick="resetAnswer('u16-2')" style="float:right; font-size:0.75em; padding:4px 8px;">🔄 초기화</button>
+                    <p class="quiz-q-title" style="font-weight:bold; margin-top:0;">Q2. 감쇠비 ζ = 1일 때를 무엇이라 하는가?</p>
+                    <div class="quiz-opt-grid" style="display:grid; grid-template-columns:1fr 1fr; gap:8px; margin:12px 0;">
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u16-2', this, '임계제동')">부족제동</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u16-2', this, '임계제동')">임계제동</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u16-2', this, '임계제동')">과제동</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u16-2', this, '임계제동')">무제동</button>
+                    </div>
+                    <div id="q-result-u16-2" style="margin-top:10px; font-weight:bold; display:none;"></div>
+                    <div id="q-expl-u16-2" class="note" style="display:none;">💡 해설: ζ=1은 진동 없이 가장 빠르게 정상값에 도달하는 임계제동 상태입니다.</div>
+                </div>
+                <div class="box quiz-box" id="box-u16-3" data-qid="u16-3">
+                    <button class="font-btn" onclick="resetAnswer('u16-3')" style="float:right; font-size:0.75em; padding:4px 8px;">🔄 초기화</button>
+                    <p class="quiz-q-title" style="font-weight:bold; margin-top:0;">Q3. 2차계의 감쇠 정도를 나타내는 계수를 부르는 그리스 문자 이름은? (한글로, 예: 제타) <span class="blue_nb" style="font-size:0.8em;">(단답형)</span></p>
+                    <div style="display:flex; gap:6px; margin:12px 0;">
+                        <input type="text" id="input-u16-3" class="mini-text-input" placeholder="정답 입력" style="max-width:180px;">
+                        <button class="font-btn" onclick="checkAnswerByInput('u16-3', document.getElementById('input-u16-3'), ['제타'])">확인</button>
+                    </div>
+                    <div id="q-result-u16-3" style="margin-top:10px; font-weight:bold; display:none;"></div>
+                    <div id="q-expl-u16-3" class="note" style="display:none;">💡 해설: 감쇠비는 그리스 문자 ζ(제타)로 표기합니다.</div>
+                </div>
+                <div class="box quiz-box" id="box-u16-4" data-qid="u16-4">
+                    <button class="font-btn" onclick="resetAnswer('u16-4')" style="float:right; font-size:0.75em; padding:4px 8px;">🔄 초기화</button>
+                    <p class="quiz-q-title" style="font-weight:bold; margin-top:0;">Q4. 1차 지연요소에서 시간이 시정수(τ)만큼 지났을 때 응답은 최종값의 약 몇 %에 도달하는가?</p>
+                    <div class="quiz-opt-grid" style="display:grid; grid-template-columns:1fr 1fr; gap:8px; margin:12px 0;">
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u16-4', this, '63%')">37%</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u16-4', this, '63%')">50%</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u16-4', this, '63%')">63%</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u16-4', this, '63%')">100%</button>
+                    </div>
+                    <div id="q-result-u16-4" style="margin-top:10px; font-weight:bold; display:none;"></div>
+                    <div id="q-expl-u16-4" class="note" style="display:none;">💡 해설: t=τ일 때 c(t)=1-e^(-1)≈0.632, 즉 최종값의 약 63%에 도달합니다.</div>
+                </div>
+                <div class="box quiz-box" id="box-u16-5" data-qid="u16-5">
+                    <button class="font-btn" onclick="resetAnswer('u16-5')" style="float:right; font-size:0.75em; padding:4px 8px;">🔄 초기화</button>
+                    <p class="quiz-q-title" style="font-weight:bold; margin-top:0;">Q5. 오버슈트는 감쇠비 ζ가 작을수록 어떻게 되는가?</p>
+                    <div class="quiz-opt-grid" style="display:grid; grid-template-columns:1fr 1fr; gap:8px; margin:12px 0;">
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u16-5', this, '커진다')">커진다</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u16-5', this, '커진다')">작아진다</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u16-5', this, '커진다')">0이 된다</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u16-5', this, '커진다')">변화 없다</button>
+                    </div>
+                    <div id="q-result-u16-5" style="margin-top:10px; font-weight:bold; display:none;"></div>
+                    <div id="q-expl-u16-5" class="note" style="display:none;">💡 해설: 감쇠비가 작을수록(진동이 심할수록) 오버슈트는 커집니다.</div>
+                </div>
+                    </div>
+                    <div style="text-align:center; margin:10px 0 20px 0; display:flex; gap:6px; justify-content:center; flex-wrap:wrap;">
+                        <button class="font-btn" onclick="shuffleSection('unit-quiz-16')" style="background-color:#8b5cf6; color:#fff;">🔀 순서 섞기</button>
+                        <button class="font-btn" onclick="resetAllInContainer('unit-quiz-16')" style="background-color:#ef4444; color:#fff;">🔄 전체 초기화</button>
+                    </div>
+
+                    <div class="page-memo-section">
+                        <p class="page-memo-title">📝 나만의 메모</p>
+                        <textarea id="memo-input-16" class="page-memo-textarea" placeholder="이 단원에서 헷갈리는 부분을 적어보세요." onblur="savePageMemo(16)"></textarea>
+                    </div>
+                </div>
+
+                <div id="sub-page-17" class="sub-page" style="display:none;">
+                    <div class="sub-page-header">
+                        <div style="display:flex; align-items:center; gap:8px;">
+                            <div class="page-indicator">17 / 22 PAGE</div>
+                            <button class="font-btn" onclick="showSubMenu()" style="font-size:0.75em; padding:4px 8px;">📋 단원 목록</button>
+                        </div>
+                        <div style="display:flex; align-items:center; gap:10px;">
+                            <label class="complete-check-label"><input type="checkbox" id="check-page-17" onchange="toggleComplete(17)"> 학습 완료</label>
+                            <button class="bookmark-btn" id="star-btn-17" onclick="toggleBookmark(17)">☆</button>
+                        </div>
+                    </div>
+                    <h2>17. 정상상태 오차</h2>
+
+                <div class="highlight-box">
+                    <p style="font-weight:700; margin:0 0 6px 0;">형(type) 분류</p>
+                    <p style="margin:0;">개루프 전달함수에 포함된 <span class='red'>적분기(극점 s=0)의 개수</span>로 0형, 1형, 2형으로 분류</p>
+                </div>
+                <div class="highlight-box">
+                    <p style="font-weight:700; margin:0 0 6px 0;">편차상수</p>
+                    <p style="margin:0;">위치편차상수 <span class='blue'>Kp = lim(s→0) G(s)</span>, 속도편차상수 <span class='blue'>Kv = lim(s→0) sG(s)</span>, 가속도편차상수 <span class='blue'>Ka = lim(s→0) s²G(s)</span></p>
+                </div>
+                <div class="highlight-box">
+                    <p style="font-weight:700; margin:0 0 6px 0;">정상위치편차</p>
+                    <p style="margin:0;"><span class='mint'>ess = 1 / (1 + Kp)</span></p>
+                </div>
+
+                    <div class="quiz-sec-header">
+                        <span class="quiz-sec-title">✏️ 단원 확인문제 (5문제)</span>
+                    </div>
+                    <div class="score-board"><span id="score-unit-quiz-17">점수: 0 / 100점 (정답 0 / 5문제)</span></div>
+                    <div id="unit-quiz-17" data-scoreboard="true">
+                <div class="box quiz-box" id="box-u17-1" data-qid="u17-1">
+                    <button class="font-btn" onclick="resetAnswer('u17-1')" style="float:right; font-size:0.75em; padding:4px 8px;">🔄 초기화</button>
+                    <p class="quiz-q-title" style="font-weight:bold; margin-top:0;">Q1. 계단입력에 대한 정상위치편차 ess = 1/(1+___)에서 빈칸은? <span class="blue_nb" style="font-size:0.8em;">(단답형)</span></p>
+                    <div style="display:flex; gap:6px; margin:12px 0;">
+                        <input type="text" id="input-u17-1" class="mini-text-input" placeholder="정답 입력" style="max-width:180px;">
+                        <button class="font-btn" onclick="checkAnswerByInput('u17-1', document.getElementById('input-u17-1'), ['Kp'])">확인</button>
+                    </div>
+                    <div id="q-result-u17-1" style="margin-top:10px; font-weight:bold; display:none;"></div>
+                    <div id="q-expl-u17-1" class="note" style="display:none;">💡 해설: 정상위치편차는 ess = 1/(1+Kp) 입니다.</div>
+                </div>
+                <div class="box quiz-box" id="box-u17-2" data-qid="u17-2">
+                    <button class="font-btn" onclick="resetAnswer('u17-2')" style="float:right; font-size:0.75em; padding:4px 8px;">🔄 초기화</button>
+                    <p class="quiz-q-title" style="font-weight:bold; margin-top:0;">Q2. 속도편차상수 Kv를 구하는 극한식은?</p>
+                    <div class="quiz-opt-grid" style="display:grid; grid-template-columns:1fr 1fr; gap:8px; margin:12px 0;">
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u17-2', this, 'lim(s→0) sG(s)')">lim(s→0) G(s)</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u17-2', this, 'lim(s→0) sG(s)')">lim(s→0) sG(s)</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u17-2', this, 'lim(s→0) sG(s)')">lim(s→∞) G(s)</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u17-2', this, 'lim(s→0) sG(s)')">lim(s→0) s²G(s)</button>
+                    </div>
+                    <div id="q-result-u17-2" style="margin-top:10px; font-weight:bold; display:none;"></div>
+                    <div id="q-expl-u17-2" class="note" style="display:none;">💡 해설: 속도편차상수는 Kv = lim(s→0) sG(s) 입니다.</div>
+                </div>
+                <div class="box quiz-box" id="box-u17-3" data-qid="u17-3">
+                    <button class="font-btn" onclick="resetAnswer('u17-3')" style="float:right; font-size:0.75em; padding:4px 8px;">🔄 초기화</button>
+                    <p class="quiz-q-title" style="font-weight:bold; margin-top:0;">Q3. 시스템의 형(type)은 개루프 전달함수의 무엇의 개수로 결정되는가?</p>
+                    <div class="quiz-opt-grid" style="display:grid; grid-template-columns:1fr 1fr; gap:8px; margin:12px 0;">
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u17-3', this, '적분기(극점 s=0)의 개수')">영점의 개수</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u17-3', this, '적분기(극점 s=0)의 개수')">적분기(극점 s=0)의 개수</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u17-3', this, '적분기(극점 s=0)의 개수')">이득 K의 크기</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u17-3', this, '적분기(극점 s=0)의 개수')">입력의 종류</button>
+                    </div>
+                    <div id="q-result-u17-3" style="margin-top:10px; font-weight:bold; display:none;"></div>
+                    <div id="q-expl-u17-3" class="note" style="display:none;">💡 해설: 형(type)은 개루프 전달함수가 갖는 원점에서의 극(적분기)의 개수로 정해집니다.</div>
+                </div>
+                <div class="box quiz-box" id="box-u17-4" data-qid="u17-4">
+                    <button class="font-btn" onclick="resetAnswer('u17-4')" style="float:right; font-size:0.75em; padding:4px 8px;">🔄 초기화</button>
+                    <p class="quiz-q-title" style="font-weight:bold; margin-top:0;">Q4. 위치편차상수를 나타내는 기호는? (알파벳 2글자) <span class="blue_nb" style="font-size:0.8em;">(단답형)</span></p>
+                    <div style="display:flex; gap:6px; margin:12px 0;">
+                        <input type="text" id="input-u17-4" class="mini-text-input" placeholder="정답 입력" style="max-width:180px;">
+                        <button class="font-btn" onclick="checkAnswerByInput('u17-4', document.getElementById('input-u17-4'), ['Kp'])">확인</button>
+                    </div>
+                    <div id="q-result-u17-4" style="margin-top:10px; font-weight:bold; display:none;"></div>
+                    <div id="q-expl-u17-4" class="note" style="display:none;">💡 해설: 위치편차상수의 기호는 Kp 입니다.</div>
+                </div>
+                <div class="box quiz-box" id="box-u17-5" data-qid="u17-5">
+                    <button class="font-btn" onclick="resetAnswer('u17-5')" style="float:right; font-size:0.75em; padding:4px 8px;">🔄 초기화</button>
+                    <p class="quiz-q-title" style="font-weight:bold; margin-top:0;">Q5. 0형 시스템에 램프(속도) 입력을 가하면 정상상태 오차는 어떻게 되는가?</p>
+                    <div class="quiz-opt-grid" style="display:grid; grid-template-columns:1fr 1fr; gap:8px; margin:12px 0;">
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u17-5', this, '무한대가 된다')">0이 된다</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u17-5', this, '무한대가 된다')">일정한 유한값을 갖는다</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u17-5', this, '무한대가 된다')">무한대가 된다</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u17-5', this, '무한대가 된다')">계산할 수 없다</button>
+                    </div>
+                    <div id="q-result-u17-5" style="margin-top:10px; font-weight:bold; display:none;"></div>
+                    <div id="q-expl-u17-5" class="note" style="display:none;">💡 해설: 0형 시스템은 속도편차상수 Kv=0이 되어 램프 입력에 대한 정상상태 오차가 무한대가 됩니다.</div>
+                </div>
+                    </div>
+                    <div style="text-align:center; margin:10px 0 20px 0; display:flex; gap:6px; justify-content:center; flex-wrap:wrap;">
+                        <button class="font-btn" onclick="shuffleSection('unit-quiz-17')" style="background-color:#8b5cf6; color:#fff;">🔀 순서 섞기</button>
+                        <button class="font-btn" onclick="resetAllInContainer('unit-quiz-17')" style="background-color:#ef4444; color:#fff;">🔄 전체 초기화</button>
+                    </div>
+
+                    <div class="page-memo-section">
+                        <p class="page-memo-title">📝 나만의 메모</p>
+                        <textarea id="memo-input-17" class="page-memo-textarea" placeholder="이 단원에서 헷갈리는 부분을 적어보세요." onblur="savePageMemo(17)"></textarea>
+                    </div>
+                </div>
+
+                <div id="sub-page-18" class="sub-page" style="display:none;">
+                    <div class="sub-page-header">
+                        <div style="display:flex; align-items:center; gap:8px;">
+                            <div class="page-indicator">18 / 22 PAGE</div>
+                            <button class="font-btn" onclick="showSubMenu()" style="font-size:0.75em; padding:4px 8px;">📋 단원 목록</button>
+                        </div>
+                        <div style="display:flex; align-items:center; gap:10px;">
+                            <label class="complete-check-label"><input type="checkbox" id="check-page-18" onchange="toggleComplete(18)"> 학습 완료</label>
+                            <button class="bookmark-btn" id="star-btn-18" onclick="toggleBookmark(18)">☆</button>
+                        </div>
+                    </div>
+                    <h2>18. 근궤적법</h2>
+
+                <div class="highlight-box">
+                    <p style="font-weight:700; margin:0 0 6px 0;">근궤적의 정의</p>
+                    <p style="margin:0;">개루프 이득 K를 <span class='red'>0 → ∞</span>로 변화시킬 때 폐루프 특성방정식의 근이 s평면에서 그리는 궤적</p>
+                </div>
+                <div class="highlight-box">
+                    <p style="font-weight:700; margin:0 0 6px 0;">출발점과 종점</p>
+                    <p style="margin:0;">근궤적은 <span class='blue'>극에서 출발</span>하여 <span class='blue'>영점에서 끝난다</span></p>
+                </div>
+                <div class="highlight-box">
+                    <p style="font-weight:700; margin:0 0 6px 0;">실수축 위 존재 조건</p>
+                    <p style="margin:0;">그 점 <span class='mint'>오른쪽</span>에 있는 극과 영점 개수의 합이 <span class='mint'>홀수</span></p>
+                </div>
+                <div class="highlight-box">
+                    <p style="font-weight:700; margin:0 0 6px 0;">점근선의 개수</p>
+                    <p style="margin:0;"><span class='orange'>극의 개수 - 영점의 개수</span></p>
+                </div>
+
+                    <div class="quiz-sec-header">
+                        <span class="quiz-sec-title">✏️ 단원 확인문제 (5문제)</span>
+                    </div>
+                    <div class="score-board"><span id="score-unit-quiz-18">점수: 0 / 100점 (정답 0 / 5문제)</span></div>
+                    <div id="unit-quiz-18" data-scoreboard="true">
+                <div class="box quiz-box" id="box-u18-1" data-qid="u18-1">
+                    <button class="font-btn" onclick="resetAnswer('u18-1')" style="float:right; font-size:0.75em; padding:4px 8px;">🔄 초기화</button>
+                    <p class="quiz-q-title" style="font-weight:bold; margin-top:0;">Q1. 근궤적은 개루프 이득 K를 어떻게 변화시킬 때 그리는 궤적인가?</p>
+                    <div class="quiz-opt-grid" style="display:grid; grid-template-columns:1fr 1fr; gap:8px; margin:12px 0;">
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u18-1', this, '0에서 무한대로 변화')">0에서 무한대로 변화</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u18-1', this, '0에서 무한대로 변화')">무한대에서 0으로 변화</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u18-1', this, '0에서 무한대로 변화')">일정하게 고정</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u18-1', this, '0에서 무한대로 변화')">음수로 변화</button>
+                    </div>
+                    <div id="q-result-u18-1" style="margin-top:10px; font-weight:bold; display:none;"></div>
+                    <div id="q-expl-u18-1" class="note" style="display:none;">💡 해설: 근궤적은 K를 0부터 무한대까지 변화시킬 때 근이 그리는 궤적입니다.</div>
+                </div>
+                <div class="box quiz-box" id="box-u18-2" data-qid="u18-2">
+                    <button class="font-btn" onclick="resetAnswer('u18-2')" style="float:right; font-size:0.75em; padding:4px 8px;">🔄 초기화</button>
+                    <p class="quiz-q-title" style="font-weight:bold; margin-top:0;">Q2. 근궤적은 어디서 출발하여 어디서 끝나는가?</p>
+                    <div class="quiz-opt-grid" style="display:grid; grid-template-columns:1fr 1fr; gap:8px; margin:12px 0;">
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u18-2', this, '극에서 출발하여 영점에서 끝난다')">영점에서 출발하여 극에서 끝난다</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u18-2', this, '극에서 출발하여 영점에서 끝난다')">극에서 출발하여 영점에서 끝난다</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u18-2', this, '극에서 출발하여 영점에서 끝난다')">항상 원점에서 시작한다</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u18-2', this, '극에서 출발하여 영점에서 끝난다')">항상 무한대에서 끝난다</button>
+                    </div>
+                    <div id="q-result-u18-2" style="margin-top:10px; font-weight:bold; display:none;"></div>
+                    <div id="q-expl-u18-2" class="note" style="display:none;">💡 해설: 근궤적은 K=0일 때의 극에서 출발해 K=∞일 때의 영점(또는 무한원점)에서 끝납니다.</div>
+                </div>
+                <div class="box quiz-box" id="box-u18-3" data-qid="u18-3">
+                    <button class="font-btn" onclick="resetAnswer('u18-3')" style="float:right; font-size:0.75em; padding:4px 8px;">🔄 초기화</button>
+                    <p class="quiz-q-title" style="font-weight:bold; margin-top:0;">Q3. 실수축 위의 한 점이 근궤적 위에 있으려면, 그 점 오른쪽에 있는 극과 영점 개수의 합은 어떤 수여야 하는가? <span class="blue_nb" style="font-size:0.8em;">(단답형)</span></p>
+                    <div style="display:flex; gap:6px; margin:12px 0;">
+                        <input type="text" id="input-u18-3" class="mini-text-input" placeholder="정답 입력" style="max-width:180px;">
+                        <button class="font-btn" onclick="checkAnswerByInput('u18-3', document.getElementById('input-u18-3'), ['홀수'])">확인</button>
+                    </div>
+                    <div id="q-result-u18-3" style="margin-top:10px; font-weight:bold; display:none;"></div>
+                    <div id="q-expl-u18-3" class="note" style="display:none;">💡 해설: 실수축 상의 근궤적 존재조건은 오른쪽 극·영점 개수의 합이 홀수인 구간입니다.</div>
+                </div>
+                <div class="box quiz-box" id="box-u18-4" data-qid="u18-4">
+                    <button class="font-btn" onclick="resetAnswer('u18-4')" style="float:right; font-size:0.75em; padding:4px 8px;">🔄 초기화</button>
+                    <p class="quiz-q-title" style="font-weight:bold; margin-top:0;">Q4. 근궤적의 점근선 개수는 무엇으로 구하는가?</p>
+                    <div class="quiz-opt-grid" style="display:grid; grid-template-columns:1fr 1fr; gap:8px; margin:12px 0;">
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u18-4', this, '극의 개수 - 영점의 개수')">극의 개수 + 영점의 개수</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u18-4', this, '극의 개수 - 영점의 개수')">극의 개수 - 영점의 개수</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u18-4', this, '극의 개수 - 영점의 개수')">영점의 개수 - 극의 개수</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u18-4', this, '극의 개수 - 영점의 개수')">항상 1개</button>
+                    </div>
+                    <div id="q-result-u18-4" style="margin-top:10px; font-weight:bold; display:none;"></div>
+                    <div id="q-expl-u18-4" class="note" style="display:none;">💡 해설: 점근선의 개수는 (극의 개수 - 영점의 개수)로 구합니다.</div>
+                </div>
+                <div class="box quiz-box" id="box-u18-5" data-qid="u18-5">
+                    <button class="font-btn" onclick="resetAnswer('u18-5')" style="float:right; font-size:0.75em; padding:4px 8px;">🔄 초기화</button>
+                    <p class="quiz-q-title" style="font-weight:bold; margin-top:0;">Q5. 근궤적이 허수축을 통과하는 지점은 어떤 상태와 관련이 있는가?</p>
+                    <div class="quiz-opt-grid" style="display:grid; grid-template-columns:1fr 1fr; gap:8px; margin:12px 0;">
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u18-5', this, '안정한계(임계안정) 상태')">완전 안정 상태</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u18-5', this, '안정한계(임계안정) 상태')">안정한계(임계안정) 상태</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u18-5', this, '안정한계(임계안정) 상태')">항상 불안정한 상태</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u18-5', this, '안정한계(임계안정) 상태')">무관하다</button>
+                    </div>
+                    <div id="q-result-u18-5" style="margin-top:10px; font-weight:bold; display:none;"></div>
+                    <div id="q-expl-u18-5" class="note" style="display:none;">💡 해설: 근궤적이 허수축을 지나는 점은 시스템이 안정과 불안정의 경계인 임계안정 상태에 해당합니다.</div>
+                </div>
+                    </div>
+                    <div style="text-align:center; margin:10px 0 20px 0; display:flex; gap:6px; justify-content:center; flex-wrap:wrap;">
+                        <button class="font-btn" onclick="shuffleSection('unit-quiz-18')" style="background-color:#8b5cf6; color:#fff;">🔀 순서 섞기</button>
+                        <button class="font-btn" onclick="resetAllInContainer('unit-quiz-18')" style="background-color:#ef4444; color:#fff;">🔄 전체 초기화</button>
+                    </div>
+
+                    <div class="page-memo-section">
+                        <p class="page-memo-title">📝 나만의 메모</p>
+                        <textarea id="memo-input-18" class="page-memo-textarea" placeholder="이 단원에서 헷갈리는 부분을 적어보세요." onblur="savePageMemo(18)"></textarea>
+                    </div>
+                </div>
+
+                <div id="sub-page-19" class="sub-page" style="display:none;">
+                    <div class="sub-page-header">
+                        <div style="display:flex; align-items:center; gap:8px;">
+                            <div class="page-indicator">19 / 22 PAGE</div>
+                            <button class="font-btn" onclick="showSubMenu()" style="font-size:0.75em; padding:4px 8px;">📋 단원 목록</button>
+                        </div>
+                        <div style="display:flex; align-items:center; gap:10px;">
+                            <label class="complete-check-label"><input type="checkbox" id="check-page-19" onchange="toggleComplete(19)"> 학습 완료</label>
+                            <button class="bookmark-btn" id="star-btn-19" onclick="toggleBookmark(19)">☆</button>
+                        </div>
+                    </div>
+                    <h2>19. 주파수응답과 보드선도</h2>
+
+                <div class="highlight-box">
+                    <p style="font-weight:700; margin:0 0 6px 0;">보드선도</p>
+                    <p style="margin:0;">이득(<span class='red'>dB</span>)과 위상을 <span class='red'>주파수(로그축)</span>에 대해 나타낸 그래프</p>
+                </div>
+                <div class="highlight-box">
+                    <p style="font-weight:700; margin:0 0 6px 0;">이득</p>
+                    <p style="margin:0;"><span class='blue'>20log|G(jω)|</span> [dB]</p>
+                </div>
+                <div class="highlight-box">
+                    <p style="font-weight:700; margin:0 0 6px 0;">이득여유(GM)</p>
+                    <p style="margin:0;">위상이 <span class='mint'>-180°</span>일 때의 이득 여유량</p>
+                </div>
+                <div class="highlight-box">
+                    <p style="font-weight:700; margin:0 0 6px 0;">위상여유(PM)</p>
+                    <p style="margin:0;">이득이 <span class='mint'>0dB</span>일 때의 위상 여유량</p>
+                </div>
+                <div class="highlight-box">
+                    <p style="font-weight:700; margin:0 0 6px 0;">안정 조건</p>
+                    <p style="margin:0;">이득여유·위상여유가 <span class='orange'>모두 양수(+)</span></p>
+                </div>
+
+                    <div class="quiz-sec-header">
+                        <span class="quiz-sec-title">✏️ 단원 확인문제 (5문제)</span>
+                    </div>
+                    <div class="score-board"><span id="score-unit-quiz-19">점수: 0 / 100점 (정답 0 / 5문제)</span></div>
+                    <div id="unit-quiz-19" data-scoreboard="true">
+                <div class="box quiz-box" id="box-u19-1" data-qid="u19-1">
+                    <button class="font-btn" onclick="resetAnswer('u19-1')" style="float:right; font-size:0.75em; padding:4px 8px;">🔄 초기화</button>
+                    <p class="quiz-q-title" style="font-weight:bold; margin-top:0;">Q1. 보드선도에서 이득 20log|G(jω)|의 단위는? <span class="blue_nb" style="font-size:0.8em;">(단답형)</span></p>
+                    <div style="display:flex; gap:6px; margin:12px 0;">
+                        <input type="text" id="input-u19-1" class="mini-text-input" placeholder="정답 입력" style="max-width:180px;">
+                        <button class="font-btn" onclick="checkAnswerByInput('u19-1', document.getElementById('input-u19-1'), ['dB'])">확인</button>
+                    </div>
+                    <div id="q-result-u19-1" style="margin-top:10px; font-weight:bold; display:none;"></div>
+                    <div id="q-expl-u19-1" class="note" style="display:none;">💡 해설: 보드선도의 이득 단위는 dB(데시벨)입니다.</div>
+                </div>
+                <div class="box quiz-box" id="box-u19-2" data-qid="u19-2">
+                    <button class="font-btn" onclick="resetAnswer('u19-2')" style="float:right; font-size:0.75em; padding:4px 8px;">🔄 초기화</button>
+                    <p class="quiz-q-title" style="font-weight:bold; margin-top:0;">Q2. 위상이 -180°가 되는 주파수에서의 이득 여유를 무엇이라 하는가?</p>
+                    <div class="quiz-opt-grid" style="display:grid; grid-template-columns:1fr 1fr; gap:8px; margin:12px 0;">
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u19-2', this, '이득여유(GM)')">위상여유(PM)</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u19-2', this, '이득여유(GM)')">이득여유(GM)</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u19-2', this, '이득여유(GM)')">대역폭</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u19-2', this, '이득여유(GM)')">공진첨두치</button>
+                    </div>
+                    <div id="q-result-u19-2" style="margin-top:10px; font-weight:bold; display:none;"></div>
+                    <div id="q-expl-u19-2" class="note" style="display:none;">💡 해설: 이득여유(GM)는 위상이 -180°일 때의 이득 여유량입니다.</div>
+                </div>
+                <div class="box quiz-box" id="box-u19-3" data-qid="u19-3">
+                    <button class="font-btn" onclick="resetAnswer('u19-3')" style="float:right; font-size:0.75em; padding:4px 8px;">🔄 초기화</button>
+                    <p class="quiz-q-title" style="font-weight:bold; margin-top:0;">Q3. 이득이 0dB가 되는 주파수에서의 위상 여유를 무엇이라 하는가?</p>
+                    <div class="quiz-opt-grid" style="display:grid; grid-template-columns:1fr 1fr; gap:8px; margin:12px 0;">
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u19-3', this, '위상여유(PM)')">이득여유(GM)</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u19-3', this, '위상여유(PM)')">위상여유(PM)</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u19-3', this, '위상여유(PM)')">공진주파수</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u19-3', this, '위상여유(PM)')">차단주파수</button>
+                    </div>
+                    <div id="q-result-u19-3" style="margin-top:10px; font-weight:bold; display:none;"></div>
+                    <div id="q-expl-u19-3" class="note" style="display:none;">💡 해설: 위상여유(PM)는 이득이 0dB일 때의 위상 여유량입니다.</div>
+                </div>
+                <div class="box quiz-box" id="box-u19-4" data-qid="u19-4">
+                    <button class="font-btn" onclick="resetAnswer('u19-4')" style="float:right; font-size:0.75em; padding:4px 8px;">🔄 초기화</button>
+                    <p class="quiz-q-title" style="font-weight:bold; margin-top:0;">Q4. 안정한 제어계가 되려면 이득여유와 위상여유는 어떤 부호를 가져야 하는가?</p>
+                    <div class="quiz-opt-grid" style="display:grid; grid-template-columns:1fr 1fr; gap:8px; margin:12px 0;">
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u19-4', this, '둘 다 양수(+)')">둘 다 음수(-)</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u19-4', this, '둘 다 양수(+)')">둘 다 양수(+)</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u19-4', this, '둘 다 양수(+)')">하나만 양수</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u19-4', this, '둘 다 양수(+)')">부호는 무관하다</button>
+                    </div>
+                    <div id="q-result-u19-4" style="margin-top:10px; font-weight:bold; display:none;"></div>
+                    <div id="q-expl-u19-4" class="note" style="display:none;">💡 해설: 안정한 제어계는 이득여유와 위상여유가 모두 양수여야 합니다.</div>
+                </div>
+                <div class="box quiz-box" id="box-u19-5" data-qid="u19-5">
+                    <button class="font-btn" onclick="resetAnswer('u19-5')" style="float:right; font-size:0.75em; padding:4px 8px;">🔄 초기화</button>
+                    <p class="quiz-q-title" style="font-weight:bold; margin-top:0;">Q5. 보드선도의 가로축(주파수축)은 어떤 척도로 그려지는가? (2글자) <span class="blue_nb" style="font-size:0.8em;">(단답형)</span></p>
+                    <div style="display:flex; gap:6px; margin:12px 0;">
+                        <input type="text" id="input-u19-5" class="mini-text-input" placeholder="정답 입력" style="max-width:180px;">
+                        <button class="font-btn" onclick="checkAnswerByInput('u19-5', document.getElementById('input-u19-5'), ['로그', '대수'])">확인</button>
+                    </div>
+                    <div id="q-result-u19-5" style="margin-top:10px; font-weight:bold; display:none;"></div>
+                    <div id="q-expl-u19-5" class="note" style="display:none;">💡 해설: 보드선도의 가로축은 로그(대수) 척도로 그립니다.</div>
+                </div>
+                    </div>
+                    <div style="text-align:center; margin:10px 0 20px 0; display:flex; gap:6px; justify-content:center; flex-wrap:wrap;">
+                        <button class="font-btn" onclick="shuffleSection('unit-quiz-19')" style="background-color:#8b5cf6; color:#fff;">🔀 순서 섞기</button>
+                        <button class="font-btn" onclick="resetAllInContainer('unit-quiz-19')" style="background-color:#ef4444; color:#fff;">🔄 전체 초기화</button>
+                    </div>
+
+                    <div class="page-memo-section">
+                        <p class="page-memo-title">📝 나만의 메모</p>
+                        <textarea id="memo-input-19" class="page-memo-textarea" placeholder="이 단원에서 헷갈리는 부분을 적어보세요." onblur="savePageMemo(19)"></textarea>
+                    </div>
+                </div>
+
+                <div id="sub-page-20" class="sub-page" style="display:none;">
+                    <div class="sub-page-header">
+                        <div style="display:flex; align-items:center; gap:8px;">
+                            <div class="page-indicator">20 / 22 PAGE</div>
+                            <button class="font-btn" onclick="showSubMenu()" style="font-size:0.75em; padding:4px 8px;">📋 단원 목록</button>
+                        </div>
+                        <div style="display:flex; align-items:center; gap:10px;">
+                            <label class="complete-check-label"><input type="checkbox" id="check-page-20" onchange="toggleComplete(20)"> 학습 완료</label>
+                            <button class="bookmark-btn" id="star-btn-20" onclick="toggleBookmark(20)">☆</button>
+                        </div>
+                    </div>
+                    <h2>20. 안정도 판별법</h2>
+
+                <div class="highlight-box">
+                    <p style="font-weight:700; margin:0 0 6px 0;">라우스-후르비츠 판별법</p>
+                    <p style="margin:0;">특성방정식 계수로 <span class='red'>배열(표)</span>을 만들어 첫 번째 열의 <span class='red'>부호변화 개수</span>로 불안정한 근의 개수를 판단</p>
+                </div>
+                <div class="highlight-box">
+                    <p style="font-weight:700; margin:0 0 6px 0;">나이퀴스트 판별법</p>
+                    <p style="margin:0;">개루프 주파수응답의 나이퀴스트 선도가 <span class='blue'>(-1, j0)</span> 점을 감싸는 횟수로 안정성을 판별</p>
+                </div>
+                <div class="highlight-box">
+                    <p style="font-weight:700; margin:0 0 6px 0;">안정 조건</p>
+                    <p style="margin:0;">특성방정식의 모든 근이 s평면의 <span class='mint'>좌반면</span>에 있어야 안정</p>
+                </div>
+
+                    <div class="quiz-sec-header">
+                        <span class="quiz-sec-title">✏️ 단원 확인문제 (5문제)</span>
+                    </div>
+                    <div class="score-board"><span id="score-unit-quiz-20">점수: 0 / 100점 (정답 0 / 5문제)</span></div>
+                    <div id="unit-quiz-20" data-scoreboard="true">
+                <div class="box quiz-box" id="box-u20-1" data-qid="u20-1">
+                    <button class="font-btn" onclick="resetAnswer('u20-1')" style="float:right; font-size:0.75em; padding:4px 8px;">🔄 초기화</button>
+                    <p class="quiz-q-title" style="font-weight:bold; margin-top:0;">Q1. 특성방정식의 계수로 표를 만들어 첫 번째 열의 부호변화 개수로 안정도를 판별하는 방법은?</p>
+                    <div class="quiz-opt-grid" style="display:grid; grid-template-columns:1fr 1fr; gap:8px; margin:12px 0;">
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u20-1', this, '라우스-후르비츠 판별법')">나이퀴스트 판별법</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u20-1', this, '라우스-후르비츠 판별법')">보드선도법</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u20-1', this, '라우스-후르비츠 판별법')">라우스-후르비츠 판별법</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u20-1', this, '라우스-후르비츠 판별법')">근궤적법</button>
+                    </div>
+                    <div id="q-result-u20-1" style="margin-top:10px; font-weight:bold; display:none;"></div>
+                    <div id="q-expl-u20-1" class="note" style="display:none;">💡 해설: 라우스-후르비츠 판별법은 특성방정식 계수의 배열표로 안정도를 판별합니다.</div>
+                </div>
+                <div class="box quiz-box" id="box-u20-2" data-qid="u20-2">
+                    <button class="font-btn" onclick="resetAnswer('u20-2')" style="float:right; font-size:0.75em; padding:4px 8px;">🔄 초기화</button>
+                    <p class="quiz-q-title" style="font-weight:bold; margin-top:0;">Q2. 라우스 표의 첫 번째 열에 부호변화가 전혀 없으면 시스템은 어떤 상태인가? <span class="blue_nb" style="font-size:0.8em;">(단답형)</span></p>
+                    <div style="display:flex; gap:6px; margin:12px 0;">
+                        <input type="text" id="input-u20-2" class="mini-text-input" placeholder="정답 입력" style="max-width:180px;">
+                        <button class="font-btn" onclick="checkAnswerByInput('u20-2', document.getElementById('input-u20-2'), ['안정'])">확인</button>
+                    </div>
+                    <div id="q-result-u20-2" style="margin-top:10px; font-weight:bold; display:none;"></div>
+                    <div id="q-expl-u20-2" class="note" style="display:none;">💡 해설: 첫 번째 열에 부호변화가 없으면 그 시스템은 안정합니다.</div>
+                </div>
+                <div class="box quiz-box" id="box-u20-3" data-qid="u20-3">
+                    <button class="font-btn" onclick="resetAnswer('u20-3')" style="float:right; font-size:0.75em; padding:4px 8px;">🔄 초기화</button>
+                    <p class="quiz-q-title" style="font-weight:bold; margin-top:0;">Q3. 나이퀴스트 판별법은 나이퀴스트 선도가 어느 점을 감싸는지로 안정도를 판별하는가?</p>
+                    <div class="quiz-opt-grid" style="display:grid; grid-template-columns:1fr 1fr; gap:8px; margin:12px 0;">
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u20-3', this, '(-1, j0)')">(0, j0)</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u20-3', this, '(-1, j0)')">(-1, j0)</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u20-3', this, '(-1, j0)')">(1, j0)</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u20-3', this, '(-1, j0)')">(0, j1)</button>
+                    </div>
+                    <div id="q-result-u20-3" style="margin-top:10px; font-weight:bold; display:none;"></div>
+                    <div id="q-expl-u20-3" class="note" style="display:none;">💡 해설: 나이퀴스트 판별법은 선도가 (-1, j0) 점을 감싸는 횟수로 안정성을 판별합니다.</div>
+                </div>
+                <div class="box quiz-box" id="box-u20-4" data-qid="u20-4">
+                    <button class="font-btn" onclick="resetAnswer('u20-4')" style="float:right; font-size:0.75em; padding:4px 8px;">🔄 초기화</button>
+                    <p class="quiz-q-title" style="font-weight:bold; margin-top:0;">Q4. 안정한 제어계가 되려면 특성방정식의 모든 근은 s평면의 어디에 위치해야 하는가?</p>
+                    <div class="quiz-opt-grid" style="display:grid; grid-template-columns:1fr 1fr; gap:8px; margin:12px 0;">
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u20-4', this, '좌반면')">우반면</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u20-4', this, '좌반면')">좌반면</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u20-4', this, '좌반면')">허수축 위</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u20-4', this, '좌반면')">원점</button>
+                    </div>
+                    <div id="q-result-u20-4" style="margin-top:10px; font-weight:bold; display:none;"></div>
+                    <div id="q-expl-u20-4" class="note" style="display:none;">💡 해설: 모든 근이 s평면의 좌반면에 있어야 시스템이 안정합니다.</div>
+                </div>
+                <div class="box quiz-box" id="box-u20-5" data-qid="u20-5">
+                    <button class="font-btn" onclick="resetAnswer('u20-5')" style="float:right; font-size:0.75em; padding:4px 8px;">🔄 초기화</button>
+                    <p class="quiz-q-title" style="font-weight:bold; margin-top:0;">Q5. 특성방정식의 근 중 하나라도 s평면의 우반면에 있으면 시스템은 어떻게 되는가? (2글자) <span class="blue_nb" style="font-size:0.8em;">(단답형)</span></p>
+                    <div style="display:flex; gap:6px; margin:12px 0;">
+                        <input type="text" id="input-u20-5" class="mini-text-input" placeholder="정답 입력" style="max-width:180px;">
+                        <button class="font-btn" onclick="checkAnswerByInput('u20-5', document.getElementById('input-u20-5'), ['불안정'])">확인</button>
+                    </div>
+                    <div id="q-result-u20-5" style="margin-top:10px; font-weight:bold; display:none;"></div>
+                    <div id="q-expl-u20-5" class="note" style="display:none;">💡 해설: 우반면에 근이 하나라도 있으면 시스템은 불안정합니다.</div>
+                </div>
+                    </div>
+                    <div style="text-align:center; margin:10px 0 20px 0; display:flex; gap:6px; justify-content:center; flex-wrap:wrap;">
+                        <button class="font-btn" onclick="shuffleSection('unit-quiz-20')" style="background-color:#8b5cf6; color:#fff;">🔀 순서 섞기</button>
+                        <button class="font-btn" onclick="resetAllInContainer('unit-quiz-20')" style="background-color:#ef4444; color:#fff;">🔄 전체 초기화</button>
+                    </div>
+
+                    <div class="page-memo-section">
+                        <p class="page-memo-title">📝 나만의 메모</p>
+                        <textarea id="memo-input-20" class="page-memo-textarea" placeholder="이 단원에서 헷갈리는 부분을 적어보세요." onblur="savePageMemo(20)"></textarea>
+                    </div>
+                </div>
+
+                <div id="sub-page-21" class="sub-page" style="display:none;">
+                    <div class="sub-page-header">
+                        <div style="display:flex; align-items:center; gap:8px;">
+                            <div class="page-indicator">21 / 22 PAGE</div>
+                            <button class="font-btn" onclick="showSubMenu()" style="font-size:0.75em; padding:4px 8px;">📋 단원 목록</button>
+                        </div>
+                        <div style="display:flex; align-items:center; gap:10px;">
+                            <label class="complete-check-label"><input type="checkbox" id="check-page-21" onchange="toggleComplete(21)"> 학습 완료</label>
+                            <button class="bookmark-btn" id="star-btn-21" onclick="toggleBookmark(21)">☆</button>
+                        </div>
+                    </div>
+                    <h2>21. 상태공간법</h2>
+
+                <div class="highlight-box">
+                    <p style="font-weight:700; margin:0 0 6px 0;">상태방정식</p>
+                    <p style="margin:0;"><span class='red'>x'(t) = Ax(t) + Bu(t)</span></p>
+                </div>
+                <div class="highlight-box">
+                    <p style="font-weight:700; margin:0 0 6px 0;">출력방정식</p>
+                    <p style="margin:0;"><span class='blue'>y(t) = Cx(t) + Du(t)</span></p>
+                </div>
+                <div class="highlight-box">
+                    <p style="font-weight:700; margin:0 0 6px 0;">상태천이행렬</p>
+                    <p style="margin:0;"><span class='mint'>Φ(t) = e^(At) = L⁻¹[(sI-A)⁻¹]</span></p>
+                </div>
+                <div class="highlight-box">
+                    <p style="font-weight:700; margin:0 0 6px 0;">상태변수</p>
+                    <p style="margin:0;">시스템의 <span class='orange'>미래 거동을 결정</span>짓는 데 필요한 최소 개수의 변수</p>
+                </div>
+
+                    <div class="quiz-sec-header">
+                        <span class="quiz-sec-title">✏️ 단원 확인문제 (5문제)</span>
+                    </div>
+                    <div class="score-board"><span id="score-unit-quiz-21">점수: 0 / 100점 (정답 0 / 5문제)</span></div>
+                    <div id="unit-quiz-21" data-scoreboard="true">
+                <div class="box quiz-box" id="box-u21-1" data-qid="u21-1">
+                    <button class="font-btn" onclick="resetAnswer('u21-1')" style="float:right; font-size:0.75em; padding:4px 8px;">🔄 초기화</button>
+                    <p class="quiz-q-title" style="font-weight:bold; margin-top:0;">Q1. 상태방정식의 일반형 x&#x27;(t) = Ax(t) + ___ 에서 빈칸은? <span class="blue_nb" style="font-size:0.8em;">(단답형)</span></p>
+                    <div style="display:flex; gap:6px; margin:12px 0;">
+                        <input type="text" id="input-u21-1" class="mini-text-input" placeholder="정답 입력" style="max-width:180px;">
+                        <button class="font-btn" onclick="checkAnswerByInput('u21-1', document.getElementById('input-u21-1'), ['Bu(t)', 'Bu'])">확인</button>
+                    </div>
+                    <div id="q-result-u21-1" style="margin-top:10px; font-weight:bold; display:none;"></div>
+                    <div id="q-expl-u21-1" class="note" style="display:none;">💡 해설: 상태방정식은 x&#x27;(t) = Ax(t) + Bu(t) 입니다.</div>
+                </div>
+                <div class="box quiz-box" id="box-u21-2" data-qid="u21-2">
+                    <button class="font-btn" onclick="resetAnswer('u21-2')" style="float:right; font-size:0.75em; padding:4px 8px;">🔄 초기화</button>
+                    <p class="quiz-q-title" style="font-weight:bold; margin-top:0;">Q2. 출력방정식의 일반형으로 옳은 것은?</p>
+                    <div class="quiz-opt-grid" style="display:grid; grid-template-columns:1fr 1fr; gap:8px; margin:12px 0;">
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u21-2', this, 'y(t) = Cx(t) + Du(t)')">y(t) = Ax(t) + Bu(t)</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u21-2', this, 'y(t) = Cx(t) + Du(t)')">y(t) = Cx(t) + Du(t)</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u21-2', this, 'y(t) = Cx(t) + Du(t)')">y(t) = Ax(t) + Cu(t)</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u21-2', this, 'y(t) = Cx(t) + Du(t)')">y(t) = Dx(t) + Bu(t)</button>
+                    </div>
+                    <div id="q-result-u21-2" style="margin-top:10px; font-weight:bold; display:none;"></div>
+                    <div id="q-expl-u21-2" class="note" style="display:none;">💡 해설: 출력방정식은 y(t) = Cx(t) + Du(t) 입니다.</div>
+                </div>
+                <div class="box quiz-box" id="box-u21-3" data-qid="u21-3">
+                    <button class="font-btn" onclick="resetAnswer('u21-3')" style="float:right; font-size:0.75em; padding:4px 8px;">🔄 초기화</button>
+                    <p class="quiz-q-title" style="font-weight:bold; margin-top:0;">Q3. 상태천이행렬 Φ(t) = e^(At)는 라플라스 역변환으로 L⁻¹[(sI-A)⁻¹]와 같다. 이때 I는 무엇을 뜻하는가? (한글 2글자) <span class="blue_nb" style="font-size:0.8em;">(단답형)</span></p>
+                    <div style="display:flex; gap:6px; margin:12px 0;">
+                        <input type="text" id="input-u21-3" class="mini-text-input" placeholder="정답 입력" style="max-width:180px;">
+                        <button class="font-btn" onclick="checkAnswerByInput('u21-3', document.getElementById('input-u21-3'), ['단위행렬', '항등행렬'])">확인</button>
+                    </div>
+                    <div id="q-result-u21-3" style="margin-top:10px; font-weight:bold; display:none;"></div>
+                    <div id="q-expl-u21-3" class="note" style="display:none;">💡 해설: I는 단위행렬(항등행렬)을 의미합니다.</div>
+                </div>
+                <div class="box quiz-box" id="box-u21-4" data-qid="u21-4">
+                    <button class="font-btn" onclick="resetAnswer('u21-4')" style="float:right; font-size:0.75em; padding:4px 8px;">🔄 초기화</button>
+                    <p class="quiz-q-title" style="font-weight:bold; margin-top:0;">Q4. 시스템의 미래 거동을 결정하는 데 필요한 최소 개수의 변수를 무엇이라 하는가?</p>
+                    <div class="quiz-opt-grid" style="display:grid; grid-template-columns:1fr 1fr; gap:8px; margin:12px 0;">
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u21-4', this, '상태변수')">출력변수</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u21-4', this, '상태변수')">상태변수</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u21-4', this, '상태변수')">제어변수</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u21-4', this, '상태변수')">조작변수</button>
+                    </div>
+                    <div id="q-result-u21-4" style="margin-top:10px; font-weight:bold; display:none;"></div>
+                    <div id="q-expl-u21-4" class="note" style="display:none;">💡 해설: 상태변수는 시스템의 미래 거동을 결정짓는 최소 개수의 변수입니다.</div>
+                </div>
+                <div class="box quiz-box" id="box-u21-5" data-qid="u21-5">
+                    <button class="font-btn" onclick="resetAnswer('u21-5')" style="float:right; font-size:0.75em; padding:4px 8px;">🔄 초기화</button>
+                    <p class="quiz-q-title" style="font-weight:bold; margin-top:0;">Q5. 상태공간법은 고차 미분방정식을 어떻게 바꾸어 표현하는가?</p>
+                    <div class="quiz-opt-grid" style="display:grid; grid-template-columns:1fr 1fr; gap:8px; margin:12px 0;">
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u21-5', this, '1차 연립 미분방정식(행렬 형태)')">1차 연립 미분방정식(행렬 형태)</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u21-5', this, '1차 연립 미분방정식(행렬 형태)')">고차 대수방정식</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u21-5', this, '1차 연립 미분방정식(행렬 형태)')">라플라스 변환 없이 직접 표현</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u21-5', this, '1차 연립 미분방정식(행렬 형태)')">0차 방정식</button>
+                    </div>
+                    <div id="q-result-u21-5" style="margin-top:10px; font-weight:bold; display:none;"></div>
+                    <div id="q-expl-u21-5" class="note" style="display:none;">💡 해설: 상태공간법은 고차 미분방정식을 여러 개의 1차 연립 미분방정식(행렬 형태)으로 표현합니다.</div>
+                </div>
+                    </div>
+                    <div style="text-align:center; margin:10px 0 20px 0; display:flex; gap:6px; justify-content:center; flex-wrap:wrap;">
+                        <button class="font-btn" onclick="shuffleSection('unit-quiz-21')" style="background-color:#8b5cf6; color:#fff;">🔀 순서 섞기</button>
+                        <button class="font-btn" onclick="resetAllInContainer('unit-quiz-21')" style="background-color:#ef4444; color:#fff;">🔄 전체 초기화</button>
+                    </div>
+
+                    <div class="page-memo-section">
+                        <p class="page-memo-title">📝 나만의 메모</p>
+                        <textarea id="memo-input-21" class="page-memo-textarea" placeholder="이 단원에서 헷갈리는 부분을 적어보세요." onblur="savePageMemo(21)"></textarea>
+                    </div>
+                </div>
+
+                <div id="sub-page-22" class="sub-page" style="display:none;">
+                    <div class="sub-page-header">
+                        <div style="display:flex; align-items:center; gap:8px;">
+                            <div class="page-indicator">22 / 22 PAGE</div>
+                            <button class="font-btn" onclick="showSubMenu()" style="font-size:0.75em; padding:4px 8px;">📋 단원 목록</button>
+                        </div>
+                        <div style="display:flex; align-items:center; gap:10px;">
+                            <label class="complete-check-label"><input type="checkbox" id="check-page-22" onchange="toggleComplete(22)"> 학습 완료</label>
+                            <button class="bookmark-btn" id="star-btn-22" onclick="toggleBookmark(22)">☆</button>
+                        </div>
+                    </div>
+                    <h2>22. 시퀀스제어와 논리회로</h2>
+
+                <div class="highlight-box">
+                    <p style="font-weight:700; margin:0 0 6px 0;">시퀀스제어</p>
+                    <p style="margin:0;">미리 정해진 <span class='red'>순서</span>에 따라 각 단계를 순차적으로 진행하는 제어</p>
+                </div>
+                <div class="highlight-box">
+                    <p style="font-weight:700; margin:0 0 6px 0;">유접점 / 무접점</p>
+                    <p style="margin:0;">유접점: <span class='blue'>릴레이(전자접촉기)</span>의 물리적 접점 사용 / 무접점: <span class='blue'>반도체 소자</span>(다이오드, 트랜지스터 등) 사용</p>
+                </div>
+                <div class="highlight-box">
+                    <p style="font-weight:700; margin:0 0 6px 0;">기본 논리회로</p>
+                    <p style="margin:0;">직렬 연결 = <span class='mint'>AND</span> / 병렬 연결 = <span class='mint'>OR</span> / b접점 = <span class='mint'>NOT</span></p>
+                </div>
+                <div class="highlight-box">
+                    <p style="font-weight:700; margin:0 0 6px 0;">접점의 종류</p>
+                    <p style="margin:0;"><span class='orange'>a접점(메이크접점)</span>: 평소 열림 → 동작 시 닫힘 / <span class='orange'>b접점(브레이크접점)</span>: 평소 닫힘 → 동작 시 열림</p>
+                </div>
+
+                    <div class="quiz-sec-header">
+                        <span class="quiz-sec-title">✏️ 단원 확인문제 (5문제)</span>
+                    </div>
+                    <div class="score-board"><span id="score-unit-quiz-22">점수: 0 / 100점 (정답 0 / 5문제)</span></div>
+                    <div id="unit-quiz-22" data-scoreboard="true">
+                <div class="box quiz-box" id="box-u22-1" data-qid="u22-1">
+                    <button class="font-btn" onclick="resetAnswer('u22-1')" style="float:right; font-size:0.75em; padding:4px 8px;">🔄 초기화</button>
+                    <p class="quiz-q-title" style="font-weight:bold; margin-top:0;">Q1. 미리 정해진 순서에 따라 각 단계를 순차적으로 진행하는 제어 방식은?</p>
+                    <div class="quiz-opt-grid" style="display:grid; grid-template-columns:1fr 1fr; gap:8px; margin:12px 0;">
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u22-1', this, '시퀀스제어')">피드백제어</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u22-1', this, '시퀀스제어')">시퀀스제어</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u22-1', this, '시퀀스제어')">적응제어</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u22-1', this, '시퀀스제어')">최적제어</button>
+                    </div>
+                    <div id="q-result-u22-1" style="margin-top:10px; font-weight:bold; display:none;"></div>
+                    <div id="q-expl-u22-1" class="note" style="display:none;">💡 해설: 시퀀스제어는 정해진 순서대로 단계를 진행하는 제어 방식입니다.</div>
+                </div>
+                <div class="box quiz-box" id="box-u22-2" data-qid="u22-2">
+                    <button class="font-btn" onclick="resetAnswer('u22-2')" style="float:right; font-size:0.75em; padding:4px 8px;">🔄 초기화</button>
+                    <p class="quiz-q-title" style="font-weight:bold; margin-top:0;">Q2. 두 접점을 직렬로 연결하면 어떤 논리회로가 되는가?</p>
+                    <div class="quiz-opt-grid" style="display:grid; grid-template-columns:1fr 1fr; gap:8px; margin:12px 0;">
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u22-2', this, 'AND회로')">OR회로</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u22-2', this, 'AND회로')">AND회로</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u22-2', this, 'AND회로')">NOT회로</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u22-2', this, 'AND회로')">NOR회로</button>
+                    </div>
+                    <div id="q-result-u22-2" style="margin-top:10px; font-weight:bold; display:none;"></div>
+                    <div id="q-expl-u22-2" class="note" style="display:none;">💡 해설: 접점을 직렬로 연결하면 두 접점이 모두 닫혀야 통전되는 AND회로가 됩니다.</div>
+                </div>
+                <div class="box quiz-box" id="box-u22-3" data-qid="u22-3">
+                    <button class="font-btn" onclick="resetAnswer('u22-3')" style="float:right; font-size:0.75em; padding:4px 8px;">🔄 초기화</button>
+                    <p class="quiz-q-title" style="font-weight:bold; margin-top:0;">Q3. 두 접점을 병렬로 연결하면 어떤 논리회로가 되는가? <span class="blue_nb" style="font-size:0.8em;">(단답형)</span></p>
+                    <div style="display:flex; gap:6px; margin:12px 0;">
+                        <input type="text" id="input-u22-3" class="mini-text-input" placeholder="정답 입력" style="max-width:180px;">
+                        <button class="font-btn" onclick="checkAnswerByInput('u22-3', document.getElementById('input-u22-3'), ['OR', 'OR회로'])">확인</button>
+                    </div>
+                    <div id="q-result-u22-3" style="margin-top:10px; font-weight:bold; display:none;"></div>
+                    <div id="q-expl-u22-3" class="note" style="display:none;">💡 해설: 접점을 병렬로 연결하면 둘 중 하나만 닫혀도 통전되는 OR회로가 됩니다.</div>
+                </div>
+                <div class="box quiz-box" id="box-u22-4" data-qid="u22-4">
+                    <button class="font-btn" onclick="resetAnswer('u22-4')" style="float:right; font-size:0.75em; padding:4px 8px;">🔄 초기화</button>
+                    <p class="quiz-q-title" style="font-weight:bold; margin-top:0;">Q4. 평소에는 열려 있다가 동작 시 닫히는 접점은?</p>
+                    <div class="quiz-opt-grid" style="display:grid; grid-template-columns:1fr 1fr; gap:8px; margin:12px 0;">
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u22-4', this, 'a접점(메이크접점)')">b접점(브레이크접점)</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u22-4', this, 'a접점(메이크접점)')">a접점(메이크접점)</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u22-4', this, 'a접점(메이크접점)')">c접점</button>
+<button class="font-btn opt-btn" onclick="checkAnswerByText('u22-4', this, 'a접점(메이크접점)')">d접점</button>
+                    </div>
+                    <div id="q-result-u22-4" style="margin-top:10px; font-weight:bold; display:none;"></div>
+                    <div id="q-expl-u22-4" class="note" style="display:none;">💡 해설: a접점(메이크접점)은 평소 열려 있다가 동작 시 닫힙니다.</div>
+                </div>
+                <div class="box quiz-box" id="box-u22-5" data-qid="u22-5">
+                    <button class="font-btn" onclick="resetAnswer('u22-5')" style="float:right; font-size:0.75em; padding:4px 8px;">🔄 초기화</button>
+                    <p class="quiz-q-title" style="font-weight:bold; margin-top:0;">Q5. 평소에는 닫혀 있다가 동작 시 열리는 접점을 무엇이라 하는가? (한글, 예: ㅇ접점) <span class="blue_nb" style="font-size:0.8em;">(단답형)</span></p>
+                    <div style="display:flex; gap:6px; margin:12px 0;">
+                        <input type="text" id="input-u22-5" class="mini-text-input" placeholder="정답 입력" style="max-width:180px;">
+                        <button class="font-btn" onclick="checkAnswerByInput('u22-5', document.getElementById('input-u22-5'), ['b접점', 'b접점(브레이크접점)'])">확인</button>
+                    </div>
+                    <div id="q-result-u22-5" style="margin-top:10px; font-weight:bold; display:none;"></div>
+                    <div id="q-expl-u22-5" class="note" style="display:none;">💡 해설: b접점(브레이크접점)은 평소 닫혀 있다가 동작 시 열립니다.</div>
+                </div>
+                    </div>
+                    <div style="text-align:center; margin:10px 0 20px 0; display:flex; gap:6px; justify-content:center; flex-wrap:wrap;">
+                        <button class="font-btn" onclick="shuffleSection('unit-quiz-22')" style="background-color:#8b5cf6; color:#fff;">🔀 순서 섞기</button>
+                        <button class="font-btn" onclick="resetAllInContainer('unit-quiz-22')" style="background-color:#ef4444; color:#fff;">🔄 전체 초기화</button>
+                    </div>
+
+                    <div class="page-memo-section">
+                        <p class="page-memo-title">📝 나만의 메모</p>
+                        <textarea id="memo-input-22" class="page-memo-textarea" placeholder="이 단원에서 헷갈리는 부분을 적어보세요." onblur="savePageMemo(22)"></textarea>
+                    </div>
                 </div>
 
             <div id="page-nav-bar" class="page-nav-bar" style="display:none;">
@@ -1521,14 +2645,14 @@
 
         <!-- 랜덤 모의고사 탭 -->
         <div id="tab-exam" class="tab-content">
-            <h1>전기기사 회로이론 - <br>🎲 랜덤 모의고사</h1>
+            <h1>전기기사 회로이론 및 제어공학 - <br>🎲 랜덤 모의고사</h1>
             <div id="exam-select" class="box" style="text-align:center;">
                 <p style="font-weight:700; margin-top:0;">몇 문제를 랜덤으로 뽑을까요?</p>
-                <p style="font-size:0.82em; color:var(--text-sub); margin-bottom:16px;">전체 60문제(1~12단원) 중에서 매번 다른 조합으로 출제돼요.</p>
+                <p style="font-size:0.82em; color:var(--text-sub); margin-bottom:16px;">전체 112문제(1~22단원) 중에서 매번 다른 조합으로 출제돼요.</p>
                 <div style="display:flex; gap:8px; justify-content:center; flex-wrap:wrap;">
-                    <button class="font-btn" onclick="startRandomExam(15)" style="padding:10px 18px;">15문제</button>
-                    <button class="font-btn" onclick="startRandomExam(30)" style="padding:10px 18px; background-color: var(--primary); color:#ffffff;">30문제</button>
-                    <button class="font-btn" onclick="startRandomExam(60)" style="padding:10px 18px;">60문제(전체)</button>
+                    <button class="font-btn" onclick="startRandomExam(20)" style="padding:10px 18px;">20문제</button>
+                    <button class="font-btn" onclick="startRandomExam(50)" style="padding:10px 18px; background-color: var(--primary); color:#ffffff;">50문제</button>
+                    <button class="font-btn" onclick="startRandomExam(112)" style="padding:10px 18px;">112문제(전체)</button>
                 </div>
             </div>
 
@@ -1546,7 +2670,7 @@
 
         <!-- 오답노트 탭 -->
         <div id="tab-wrong" class="tab-content">
-            <h1>전기기사 회로이론 - <br>📕 나만의 자동 오답노트</h1>
+            <h1>전기기사 회로이론 및 제어공학 - <br>📕 나만의 자동 오답노트</h1>
             <div class="box" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; margin-top: 6px; padding: 12px 14px;">
                 <div style="font-size: 0.9em; color: var(--text-color);">
                     💡 단원별 확인문제, 랜덤모의고사에서 <b>틀린 문제가 자동으로 이곳에 기록</b>됩니다.

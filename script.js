@@ -1,5 +1,5 @@
 var currentSubPage = 0;
-var totalSubPages = 12;
+var totalSubPages = 22;
 var bookmarks = JSON.parse(localStorage.getItem('user_bookmarks') || '[]');
 var completes = JSON.parse(localStorage.getItem('user_completes') || '[]');
 var currentFontSize = parseInt(localStorage.getItem('user_font_size') || '14', 10);
@@ -381,7 +381,11 @@ var unitTitles = {
     1: "01. 직류회로의 기초", 2: "02. 회로망 해석법", 3: "03. 정현파 교류의 기초",
     4: "04. 페이저와 임피던스", 5: "05. 교류전력", 6: "06. 공진회로",
     7: "07. 상호유도와 결합회로", 8: "08. 대칭 3상 회로", 9: "09. 비대칭 3상과 대칭좌표법",
-    10: "10. 비정현파 교류", 11: "11. 4단자망", 12: "12. 라플라스 변환과 과도현상"
+    10: "10. 비정현파 교류", 11: "11. 4단자망", 12: "12. 라플라스 변환과 과도현상",
+    13: "13. 제어계의 기초", 14: "14. 전달함수", 15: "15. 블록선도와 신호흐름선도",
+    16: "16. 과도응답", 17: "17. 정상상태 오차", 18: "18. 근궤적법",
+    19: "19. 주파수응답과 보드선도", 20: "20. 안정도 판별법", 21: "21. 상태공간법",
+    22: "22. 시퀀스제어와 논리회로"
 };
 
 function unitOfQid(qId) {
